@@ -1,17 +1,17 @@
-
 .page-footer {
   display: flex;
   flex-direction: column;
   width: 320px;
   height: 750px;
+
   &__place {
     display: flex;
     justify-content: flex-start;
     .zero-margin();
     width: 100%;
     background-color: #ffffff;
-
   }
+
   &__title {
     display: flex;
     width: 127px;
@@ -23,6 +23,7 @@
     text-transform: uppercase;
     .font-normal();
   }
+
   &__address {
     display: flex;
     color: @text-color;
@@ -43,11 +44,13 @@
     height: 236px;
     background-color: rgb(238, 212, 212);
   }
+
   &__logo-wrap {
     display: flex;
     width: 100%;
     height: 94px;
   }
+
   &__logo-link {
     display: block;
     .zero-margin();
@@ -57,11 +60,14 @@
     height: 24px;
     cursor: pointer;
   }
+
   &__logo {
     opacity: 1;
+
     &:hover {
       opacity: 0.6;
     }
+
     &:active {
       opacity: 0.3;
     }
