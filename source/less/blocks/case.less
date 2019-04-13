@@ -1,0 +1,96 @@
+.case {
+  width: 320px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  background-color: @grey-bg;
+
+  &__heading {
+    display: block;
+    color: @heading-color;
+    font-size: 36px;
+    line-height: 1.67;
+    .zero-margin();
+    margin-left: 20px;
+  }
+
+  &__description {
+    display: block;
+    width: 270px;
+    font-family: @font-arial;
+    font-size: 14px;
+    line-height: 1.29;
+    color: @text-color;
+    .zero-margin();
+    margin-left: 20px;
+  }
+
+  &__list {
+    .zero-margin();
+    display: flex;
+    width: 280px;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    width: 124px;
+    border: 1px solid black; /*CHANGE AFTER TESTING*/
+    border-radius: 3px;
+  }
+
+  &__goal {
+    display: block;
+    font-family: @font-oswald-r;
+    font-size: 24px;
+    line-height: 1;
+    text-align: center;
+    text-transform: uppercase;
+    color: @heading-color;
+  }
+
+  &__goal-description {
+    display: block;
+    font-family: @font-arial;
+    font-size: 12px;
+    line-height: 1;
+    text-align: center;
+    width: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    color: @text-color;
+  }
+
+  &__food-cost {
+    display: block;
+    font-size: 14px;
+    line-height: 1.43px;
+    text-align: center;
+    color: @heading-color;
+    margin: 0 auto;
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+
+  &__nav {
+    display: flex;
+    width: 200px;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-bottom: 35px;
+  }
+
+  &__link {
+    display: block;
+    font-family: @font-oswald-r;
+    font-size: 16px;
+    line-height: 1.25;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: @heading-color;
+  }
+}

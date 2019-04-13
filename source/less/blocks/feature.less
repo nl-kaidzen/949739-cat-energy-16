@@ -1,0 +1,48 @@
+.feature {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 320px;
+
+  &__heading {
+    font-size: 36px;
+    line-height: 1.67;
+    color: @heading-color;
+    .zero-margin();
+    margin-left: 20px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    .zero-margin();
+  }
+
+  &__item {
+    display: flex;
+    margin-top: 20px;
+  }
+
+  &__bg {
+    display: block;
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+    margin-left: 20px;
+    background-color: @btn-bg;
+  }
+
+  &__description {
+    display: block;
+    width: 195px;
+    .zero-margin();
+    padding-top: 4px;
+
+    font-size: 14px;
+    line-height: 1.29;
+    font-family: @font-arial;
+    color: @text-color;
+  }
+}

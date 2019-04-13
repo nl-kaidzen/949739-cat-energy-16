@@ -7,32 +7,44 @@
   &__place {
     display: flex;
     justify-content: flex-start;
-    .zero-margin();
     width: 100%;
+
     background-color: #ffffff;
+
+    .zero-margin();
   }
 
   &__title {
     display: flex;
-    width: 127px;
-    .zero-margin();
+    width: 125px;
+
     font-size: 16px;
     line-height: 1.25;
-    color: @heading-color;
     font-family: @font-oswald-r;
+    color: @heading-color;
     text-transform: uppercase;
+
     .font-normal();
+    .zero-margin();
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-bottom: 24px;
   }
 
   &__address {
     display: flex;
-    color: @text-color;
-    .font-normal();
-    .zero-margin();
+    width: 137px;
+
     font-size: @text-size;
     line-height: 1.43;
     font-family: @font-arial;
-    width: 136px;
+    color: @text-color;
+
+    .font-normal();
+    .zero-margin();
+    margin-top: 31px;
+    margin-right: 20px;
+    margin-left: 19px;
   }
   /*Insert MAP's style here*/
 
@@ -42,7 +54,8 @@
     justify-content: flex-start;
     width: 320px;
     height: 236px;
-    background-color: rgb(238, 212, 212);
+
+    background-color: @grey-bg;
   }
 
   &__logo-wrap {
@@ -53,12 +66,14 @@
 
   &__logo-link {
     display: block;
-    .zero-margin();
-    margin: 0 auto;
-    margin-top: 39px;
     width: 128px;
     height: 24px;
+    margin: 0 auto;
+    margin-top: 39px;
+
     cursor: pointer;
+
+    .zero-margin();
   }
 
   &__logo {

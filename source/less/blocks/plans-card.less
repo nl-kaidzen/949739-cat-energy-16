@@ -1,34 +1,48 @@
 .plans-card {
-  .zero-margin();
-  width: 280px;
-  display: block;
-  justify-content: flex-start;
+  display: flex;
   flex-direction: column;
-  background-color: aqua;
+  justify-content: flex-start;
+  width: 280px;
+
+  background-color: @grey-bg;
 
   &__title {
-    .zero-margin();
-    text-transform: uppercase;
     font-size: 24px;
     line-height: 1.54;
     color: @heading-color;
+    text-transform: uppercase;
+
+    .zero-margin();
   }
 
   &__discription {
-    font-family: @font-arial;
+    margin-right: 20px;
+    margin-left: 20px;
+
     font-size: 14px;
     line-height: 1.29;
+    font-family: @font-arial;
     color: @text-color;
-    margin-left: 20px;
-    margin-right: 20px;
   }
 
   &__link {
-    font-size: 16px;
-    padding-left: 20px;
-    color: @heading-color;
-    background-color: transparent;
     justify-content: flex-start;
     box-sizing: border-box;
+    padding-left: 20px;
+
+    font-size: 16px;
+    color: @heading-color;
+
+    background-color: transparent;
+
+    &:hover {
+      background-color: transparent;
+    }
+
+    &:active {
+      color: rgba(17, 17, 17, 0.3);
+
+      background-color: transparent;
+    }
   }
 }
