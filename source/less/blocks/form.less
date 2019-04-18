@@ -1,0 +1,31 @@
+.form {
+  display: flex;
+  width: 320px;
+  flex-direction: column;
+
+  &__label {
+    display: inline-flex;
+    font-family: @font-oswald-r;
+    color: @label-color;
+    text-transform: uppercase;
+    font-size: 16px;
+    .zero-margin();
+    margin-left: 20px;
+    margin-right: 16px;
+  }
+
+  &__input {
+    display: flex;
+    align-items: center;
+    width: 175px;
+    height: 45px;
+    font-family: @font-oswald-r;
+    line-height: 1.13;
+    font-size: 16px;
+    .zero-margin();
+    padding-left: 16px;
+    box-sizing: border-box;
+    border: 1px solid #f2f2f2;
+    border-radius: 3px;
+  }
+}
