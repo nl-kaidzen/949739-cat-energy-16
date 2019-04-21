@@ -6,6 +6,8 @@
   background-color: #ffffff;
 
   &__list {
+    display: flex;
+    flex-direction: column;
     .zero-margin();
     width: 100%;
     list-style: none;
@@ -17,7 +19,6 @@
 
   &__link {
     display: flex;
-    align-content: center;
     align-items: center;
     justify-content: center;
     width: 100%;
@@ -39,5 +40,50 @@
     &:active {
       color: rgba(17, 17, 17, 0.3);
     }
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav {
+    width: 490px;
+    border: 2px solid green;
+
+    &__list {
+      width: 490px;
+      flex-direction: row;
+      margin-right: 30px;
+      justify-content: flex-end;
+    }
+
+    &__item {
+      background-color: transparent;
+      margin-left: 38px;
+    }
+
+    &__link {
+      height: 18px;
+      font-size: 18px;
+      font-weight: normal;
+      line-height: 1.39;
+      color: @label-color;
+      border-top: none;
+      border-bottom: none;
+      margin-top: 43px;
+
+      &:hover {
+        color: rgba(17, 17, 17, 0.6);
+      }
+
+      &:active {
+        color: rgba(17, 17, 17, 0.3);
+      }
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav {
+    width: @desktop-width;
+    border: 2px dotted red;
   }
 }

@@ -68,12 +68,10 @@
     display: block;
     width: 128px;
     height: 24px;
+    .zero-margin();
     margin: 0 auto;
     margin-top: 39px;
-
     cursor: pointer;
-
-    .zero-margin();
   }
 
   &__logo {
@@ -86,5 +84,14 @@
     &:active {
       opacity: 0.3;
     }
+  }
+
+  &__copyright {
+    display: flex;
+    width: 280px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 22px;
   }
 }
