@@ -50,3 +50,19 @@
     color: @text-color;
   }
 }
+
+@media (min-width: @tablet-width) {
+  .feature {
+    width: @tablet-width;
+    margin: 0 auto;
+
+    &__heading {
+      font-size: 60px;
+      line-height: 1;
+      color: @heading-color;
+      .zero-margin();
+      margin-left: 33px;
+      margin-top: 20px;
+    }
+  }
+}

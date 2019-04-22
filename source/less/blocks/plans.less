@@ -17,15 +17,35 @@
   }
 
   &__item {
-    margin-right: 20px;
-    margin-bottom: 20px;
-    margin-left: 20px;
-
     .zero-margin();
+    margin-bottom: 30px;
   }
 
   &__card {
     margin-right: auto;
     margin-left: auto;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .plans {
+    width: @tablet-width;
+    margin: 0 auto;
+    margin-top: 529px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .plans {
+    width: @desktop-width;
+    margin: 0 auto;
+    margin-top: 80px;
+
+    &__list {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+    }
   }
 }
