@@ -3,6 +3,7 @@
   flex-direction: column;
   justify-content: flex-start;
   width: 280px;
+  position: relative;
 
   background-color: @grey-bg;
 
@@ -11,14 +12,13 @@
     line-height: 1.54;
     color: @heading-color;
     text-transform: uppercase;
-
     .zero-margin();
   }
 
   &__discription {
+    .zero-margin();
     margin-right: 20px;
     margin-left: 20px;
-
     font-size: 14px;
     line-height: 1.29;
     font-family: @font-arial;
@@ -29,11 +29,10 @@
     justify-content: flex-start;
     box-sizing: border-box;
     padding-left: 20px;
-
     font-size: 16px;
     color: @heading-color;
-
     background-color: transparent;
+    line-height: 1;
 
     &:hover {
       background-color: transparent;
@@ -41,8 +40,85 @@
 
     &:active {
       color: rgba(17, 17, 17, 0.3);
-
       background-color: transparent;
+    }
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .plans-card {
+    width: 708px;
+    margin: 0 auto;
+
+    &__logo {
+      position: absolute;
+      top: 92px;
+      right: 62px;
+      width: 200px;
+      height: 200px;
+    }
+
+    &__title {
+      font-size: 36px;
+      line-height: 1.03;
+      margin-top: 80px;
+      margin-left: 55px;
+    }
+
+    &__discription {
+      width: 380px;
+      margin-left: 52px;
+      margin-top: 23px;
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    &__link {
+      .zero-margin();
+      margin-left: 53px;
+      margin-top: 61px;
+      margin-bottom: 62px;
+      font-size: 20px;
+      height: 20px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .plans-card {
+    width: 570px;
+    margin: 0 auto;
+
+    &__logo {
+      position: absolute;
+      top: 47px;
+      left: 52px;
+      width: 100px;
+      height: 100px;
+    }
+
+    &__title {
+      margin-left: 215px;
+    }
+
+    &__discription {
+      width: 465px;
+      margin-left: 52px;
+      margin-top: 75px;
+    }
+
+    &__link {
+      margin-left: 53px;
+      margin-top: 33px;
+
+      &:hover {
+        background-color: transparent;
+      }
+
+      &:active {
+        color: rgba(17, 17, 17, 0.3);
+        background-color: transparent;
+      }
     }
   }
 }
