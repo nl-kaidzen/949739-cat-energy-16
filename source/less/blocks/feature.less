@@ -49,6 +49,10 @@
     font-family: @font-arial;
     color: @text-color;
   }
+
+  &__number {
+    display: none;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -59,8 +63,6 @@
     &__heading {
       font-size: 60px;
       line-height: 1;
-      color: @heading-color;
-      .zero-margin();
       margin-left: 33px;
       margin-top: 20px;
     }
@@ -74,21 +76,24 @@
 
     &__item {
       display: flex;
+      position: relative;
       flex-direction: column;
       width: 280px;
       height: 228px;
-      margin-top: 20px;
-      /*margin-right: 138px;*/
-      background-color: red;
+      margin-top: 60px;
+      margin-right: 148px;
+      margin-bottom: 30px;
+    }
+
+    &__item:nth-child(2n) {
+      margin-right: 0;
     }
 
     &__bg {
-      display: block;
       width: 80px;
       height: 80px;
       margin-right: 0;
       margin-left: 0;
-      background-color: @btn-bg;
     }
 
     &__description {
@@ -96,6 +101,56 @@
       margin-top: 35px;
       font-size: 16px;
       line-height: 1.5;
+    }
+
+    &__number {
+      display: block;
+      position: absolute;
+      font-family: @font-oswald-r;
+      font-size: 281px;
+      color: @grey-bg;
+      top: -60px;
+      left: 124px;
+      z-index: -1;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .feature {
+    width: @desktop-width;
+    margin: 0 auto;
+
+    &__heading {
+      font-size: 60px;
+      margin-left: 0;
+      margin-top: 45px;
+    }
+
+    &__list {
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: @desktop-width;
+      margin: 0 auto;
+    }
+
+    &__item {
+      display: flex;
+      position: relative;
+      flex-direction: column;
+      width: 280px;
+      height: 228px;
+      margin-top: 60px;
+      margin-right: 33px;
+      margin-bottom: 30px;
+    }
+
+    &__item:nth-child(2n) {
+      margin-right: 33px;
+    }
+
+    &__item:nth-child(4n) {
+      margin-right: 0;
     }
   }
 }
