@@ -3,22 +3,25 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <header class="page-header">
-    <a href="index.html" class="main-nav__logo-link">
+    <a href="index.html" class="page-header__logo-link">
       <!--w/o link for index.html-->
       <!--remove after copy-->
-      <img src="img/logo-mobile.svg" alt="Логотип сайта Кет энерджи" class="logo" width="191" height="39">
+      <!--<img src="img/logo-mobile.svg" alt="Логотип сайта Кет энерджи" class="page-header__logo" width="191" height="39">-->
     </a>
     <nav class="main-nav">
-      <button class="main-nav__toggle">
+      <!--<button class="main-nav__toggle">
         <span class="main-nav__toggle-bg">=</span>Бургер-меню
-        <!--Icon or pseudo-element-->
-      </button>
+
+      </button>-->
+      <!--Icon or pseudo-element-->
       <ul class="main-nav__list">
         <li class="main-nav__item"><a href="index.html" class="main-nav__link">Главная</a></li>
         <li class="main-nav__item"><a href="catalog.html" class="main-nav__link">Каталог продукции</a></li>
@@ -27,148 +30,166 @@
     </nav>
   </header>
   <main class="page-main">
-    <h1 class="heading  page-main__heading">Каталог товаров</h1>
-    <ul class="product-list  page-main__list">
-      <li class="product-list__item">
-        <img src="http://placehold.it/140x144" alt="Фото Кэт Энерджи курица" class="product-list__image">
-        <h3 class="heading  product-list__name">Cat energy pro 500 г</h3>
-        <ul class="feature-list  product-list__features">
-          <li class="feature-list__item">
-            <span class="feature-list__name">Объем</span>
-            <span class="feature-list__value">500 г</span>
-          </li>
-          <li class="feature-list__item">
-            <span class="feature-list__name">Вкус</span>
-            <span class="feature-list__value">Курица</span>
-          </li>
-          <li class="feature-list__item">
-            <span class="feature-list__name">Цена</span>
-            <span class="feature-list__value">700 Р.</span>
-          </li>
-        </ul>
-        <a href="#" class="button  product-list__button">Заказать</a>
+    <section class="products">
+    <h1 class="heading  products__heading">Каталог товаров</h1>
+    <ul class="product-card products__list">
+      <li class="product-card__item">
+        <img src="http://placehold.it/140x144" alt="Фото Кэт Энерджи курица" class="product-card__image">
+        <div class="product-card__wrapper">
+          <h3 class="heading  product-card__name">Cat energy pro 500 г</h3>
+          <ul class="feature-list  product-card__features">
+            <li class="feature-list__item">
+              <span class="feature-list__name">Объем</span>
+              <span class="feature-list__value">500 г</span>
+            </li>
+            <li class="feature-list__item">
+              <span class="feature-list__name">Вкус</span>
+              <span class="feature-list__value">Курица</span>
+            </li>
+            <li class="feature-list__item">
+              <span class="feature-list__name">Цена</span>
+              <span class="feature-list__value">700 Р.</span>
+            </li>
+          </ul>
+        </div>
+        <a href="#" class="button  product-card__button">Заказать</a>
       </li>
-      <li class="product-list__item">
-        <img src="http://placehold.it/140x144" alt="Фото Кэт Энерджи курица" class="product-list__image">
-        <h3 class="heading  product-list__name">Cat energy pro 1000 г</h3>
-        <ul class="feature-list  product-list__features">
-          <li class="feature-list__item">
-            <span class="feature-list__name">Объем</span>
-            <span class="feature-list__value">1000 г</span>
-          </li>
-          <li class="feature-list__item">
-            <span class="feature-list__name">Вкус</span>
-            <span class="feature-list__value">Курица</span>
-          </li>
-          <li class="feature-list__item">
-            <span class="feature-list__name">Цена</span>
-            <span class="feature-list__value">1000 Р.</span>
-          </li>
-        </ul>
-        <a href="#" class="button  product-list__button">Заказать</a>
+      <li class="product-card__item">
+        <img src="http://placehold.it/140x144" alt="Фото Кэт Энерджи курица" class="product-card__image--big">
+        <div class="product-card__wrapper">
+          <h3 class="heading  product-card__name">Cat energy pro 1000 г</h3>
+          <ul class="feature-list  product-card__features">
+            <li class="feature-list__item">
+              <span class="feature-list__name">Объем</span>
+              <span class="feature-list__value">1000 г</span>
+            </li>
+            <li class="feature-list__item">
+              <span class="feature-list__name">Вкус</span>
+              <span class="feature-list__value">Курица</span>
+            </li>
+            <li class="feature-list__item">
+              <span class="feature-list__name">Цена</span>
+              <span class="feature-list__value">1000 Р.</span>
+            </li>
+          </ul>
+        </div>
+        <a href="#" class="button  product-card__button">Заказать</a>
       </li>
-      <li class="product-list__item">
-        <img src="http://placehold.it/140x144" alt="Фото Кэт Энерджи курица" class="product-list__image">
-        <h3 class="heading  product-list__name">Cat energy pro 500 г</h3>
-        <ul class="feature-list  product-list__features">
-          <li class="feature-list__item">
-            <span class="feature-list__name">Объем</span>
-            <span class="feature-list__value">500 г</span>
-          </li>
-          <li class="feature-list__item">
-            <span class="feature-list__name">Вкус</span>
-            <span class="feature-list__value">Рыба</span>
-          </li>
-          <li class="feature-list__item">
-            <span class="feature-list__name">Цена</span>
-            <span class="feature-list__value">700 Р.</span>
-          </li>
-        </ul>
-        <a href="#" class="button  product-list__button">Заказать</a>
+      <li class="product-card__item">
+        <img src="http://placehold.it/140x144" alt="Фото Кэт Энерджи курица" class="product-card__image">
+        <div class="product-card__wrapper">
+          <h3 class="heading  product-card__name">Cat energy pro 500 г</h3>
+          <ul class="feature-list  product-card__features">
+            <li class="feature-list__item">
+              <span class="feature-list__name">Объем</span>
+              <span class="feature-list__value">500 г</span>
+            </li>
+            <li class="feature-list__item">
+              <span class="feature-list__name">Вкус</span>
+              <span class="feature-list__value">Рыба</span>
+            </li>
+            <li class="feature-list__item">
+              <span class="feature-list__name">Цена</span>
+              <span class="feature-list__value">700 Р.</span>
+            </li>
+          </ul>
+        </div>
+        <a href="#" class="button  product-card__button">Заказать</a>
       </li>
-      <li class="product-list__item">
-        <img src="http://placehold.it/140x144" alt="Фото Кэт Энерджи курица" class="product-list__image">
-        <h3 class="heading  product-list__name">Cat energy pro 1000 г</h3>
-        <ul class="feature-list  product-list__features">
-          <li class="feature-list__item">
-            <span class="feature-list__name">Объем</span>
-            <span class="feature-list__value">1000 г</span>
-          </li>
-          <li class="feature-list__item">
-            <span class="feature-list__name">Вкус</span>
-            <span class="feature-list__value">Рыба</span>
-          </li>
-          <li class="feature-list__item">
-            <span class="feature-list__name">Цена</span>
-            <span class="feature-list__value">1000 Р.</span>
-          </li>
-        </ul>
-        <a href="#" class="button  product-list__button">Заказать</a>
+      <li class="product-card__item">
+        <img src="http://placehold.it/140x144" alt="Фото Кэт Энерджи курица" class="product-card__image--big">
+        <div class="product-card__wrapper">
+          <h3 class="heading  product-card__name">Cat energy pro 1000 г</h3>
+          <ul class="feature-list  product-card__features">
+            <li class="feature-list__item">
+              <span class="feature-list__name">Объем</span>
+              <span class="feature-list__value">1000 г</span>
+            </li>
+            <li class="feature-list__item">
+              <span class="feature-list__name">Вкус</span>
+              <span class="feature-list__value">Рыба</span>
+            </li>
+            <li class="feature-list__item">
+              <span class="feature-list__name">Цена</span>
+              <span class="feature-list__value">1000 Р.</span>
+            </li>
+          </ul>
+        </div>
+        <a href="#" class="button  product-card__button">Заказать</a>
       </li>
-      <li class="product-list__item">
-        <img src="http://placehold.it/140x144" alt="Фото Кэт Энерджи курица" class="product-list__image">
-        <h3 class="heading  product-list__name">Cat energy slim 500 г</h3>
-        <ul class="feature-list  product-list__features">
-          <li class="feature-list__item">
-            <span class="feature-list__name">Объем</span>
-            <span class="feature-list__value">500 г</span>
-          </li>
-          <li class="feature-list__item">
-            <span class="feature-list__name">Вкус</span>
-            <span class="feature-list__value">Гречка</span>
-          </li>
-          <li class="feature-list__item">
-            <span class="feature-list__name">Цена</span>
-            <span class="feature-list__value">400 Р.</span>
-          </li>
-        </ul>
-        <a href="#" class="button  product-list__button">Заказать</a>
+      <li class="product-card__item">
+        <img src="http://placehold.it/140x144" alt="Фото Кэт Энерджи курица" class="product-card__image">
+        <div class="product-card__wrapper">
+          <h3 class="heading  product-card__name">Cat energy slim 500 г</h3>
+          <ul class="feature-list  product-card__features">
+            <li class="feature-list__item">
+              <span class="feature-list__name">Объем</span>
+              <span class="feature-list__value">500 г</span>
+            </li>
+            <li class="feature-list__item">
+              <span class="feature-list__name">Вкус</span>
+              <span class="feature-list__value">Гречка</span>
+            </li>
+            <li class="feature-list__item">
+              <span class="feature-list__name">Цена</span>
+              <span class="feature-list__value">400 Р.</span>
+            </li>
+          </ul>
+        </div>
+        <a href="#" class="button  product-card__button">Заказать</a>
       </li>
-      <li class="product-list__item">
-        <img src="http://placehold.it/140x144" alt="Фото Кэт Энерджи курица" class="product-list__image">
-        <h3 class="heading  product-list__name">Cat energy pro 1000 г</h3>
-        <ul class="feature-list  product-list__features">
-          <li class="feature-list__item">
-            <span class="feature-list__name">Объем</span>
-            <span class="feature-list__value">1000 г</span>
-          </li>
-          <li class="feature-list__item">
-            <span class="feature-list__name">Вкус</span>
-            <span class="feature-list__value">Гречка</span>
-          </li>
-          <li class="feature-list__item">
-            <span class="feature-list__name">Цена</span>
-            <span class="feature-list__value">700 Р.</span>
-          </li>
-        </ul>
-        <a href="#" class="button  product-list__button">Заказать</a>
+      <li class="product-card__item">
+        <img src="http://placehold.it/140x144" alt="Фото Кэт Энерджи курица" class="product-card__image--big">
+        <div class="product-card__wrapper">
+          <h3 class="heading  product-card__name">Cat energy pro 1000 г</h3>
+          <ul class="feature-list  product-card__features">
+            <li class="feature-list__item">
+              <span class="feature-list__name">Объем</span>
+              <span class="feature-list__value">1000 г</span>
+            </li>
+            <li class="feature-list__item">
+              <span class="feature-list__name">Вкус</span>
+              <span class="feature-list__value">Гречка</span>
+            </li>
+            <li class="feature-list__item">
+              <span class="feature-list__name">Цена</span>
+              <span class="feature-list__value">700 Р.</span>
+            </li>
+          </ul>
+        </div>
+        <a href="#" class="button  product-card__button">Заказать</a>
       </li>
-      <li class="product-list__item">
-        <img src="http://placehold.it/140x144" alt="Фото Кэт Энерджи курица" class="product-list__image">
-        <h3 class="heading  product-list__name">Cat energy pro 500 г</h3>
-        <ul class="feature-list  product-list__features">
-          <li class="feature-list__item">
-            <span class="feature-list__name">Объем</span>
-            <span class="feature-list__value">500 г</span>
-          </li>
-          <li class="feature-list__item">
-            <span class="feature-list__name">Вкус</span>
-            <span class="feature-list__value">Рис</span>
-          </li>
-          <li class="feature-list__item">
-            <span class="feature-list__name">Цена</span>
-            <span class="feature-list__value">500 Р.</span>
-          </li>
-        </ul>
-        <a href="#" class="button  product-list__button">Заказать</a>
+      <li class="product-card__item">
+        <img src="http://placehold.it/140x144" alt="Фото Кэт Энерджи курица" class="product-card__image">
+        <div class="product-card__wrapper">
+          <h3 class="heading  product-card__name">Cat energy pro 500 г</h3>
+          <ul class="feature-list  product-card__features">
+            <li class="feature-list__item">
+              <span class="feature-list__name">Объем</span>
+              <span class="feature-list__value">500 г</span>
+            </li>
+            <li class="feature-list__item">
+              <span class="feature-list__name">Вкус</span>
+              <span class="feature-list__value">Рис</span>
+            </li>
+            <li class="feature-list__item">
+              <span class="feature-list__name">Цена</span>
+              <span class="feature-list__value">500 Р.</span>
+            </li>
+          </ul>
+        </div>
+        <a href="#" class="button  product-card__button">Заказать</a>
+      </li>
+      <li class="product-card__item product-card__item--more">
+        <a href="#" class="product-card__btn-plus"></a>
+        <!--MORE ITEM WITH JS-->
+        <!--CHANGE + TO SVG-->
+        <p class="heading product-card__name product-card__discription">Показать еще 100500 товаров</p>
+        <p class="product-card__subtitle">На самом деле вкусов гораздо больше!</p>
+        <a href="#" class="button  product-card__button--more">Заказать</a>
       </li>
     </ul>
-    <a href="#" class="product-list__more-btn">+</a>
-    <!--MORE ITEM WITH JS-->
-    <!--CHANGE + TO SVG-->
-    <p class="product-list__btn-discription">Показать еще 100500 товаров</p>
-    <p class="product-list__subtitle">На самом деле вкусов гораздо больше!</p>
-    <a href="#" class="button  product-list__button-more">Заказать</a>
+    </section>
     <section class="extra">
       <h2 class="heading  extra__heading">Дополнительные товары</h2>
       <ul class="extra__list">
@@ -205,18 +226,23 @@
           и получите чехол для кота в подарок!</p>
       </div>
     </section>
+    <section class="contacts">
+      <div class="contacts__wrapper">
+        <div class="contacts__place">
+          <p class="contacts__title">Приглашаем
+            к сотрудничеству
+            дилеров!</p>
+          <address class="contacts__address">ул. Большая Конюшенная, д. 19/8
+            Санкт-Петербург</address>
+        </div>
+      </div>
+      <a href="map.html" class="contacts__map-link">
+        <img src="img/bg-map-mobile@1x.png" alt="Карта с указанием местаположения магазина Кэт Энерджи"
+          class="contacts__map">
+      </a>
+    </section>
   </main>
   <footer class="page-footer">
-    <div class="page-footer__place">
-      <p class="page-footer__title">Приглашаем
-        к сотрудничеству
-        дилеров!</p>
-      <address class="page-footer__address">ул. Большая Конюшенная, д. 19/8
-        Санкт-Петербург</address>
-    </div>
-    <a href="map.html" class="page-footer__map-link">
-      <img src="img/bg-map-mobile@1x.png" alt="Карта с указанием местаположения магазина Кэт Энерджи" class="map">
-    </a>
     <div class="page-footer__footer-wrap">
       <div class="page-footer__logo-wrap">
         <a href="index.html" class="page-footer__logo-link">
@@ -225,7 +251,7 @@
           <img src="img/logo-footer.svg" alt="Логотип интернет-магазина Кэт Энерджи" class="page-footer__logo">
         </a>
       </div>
-      <ul class="page-footer__list  social">
+      <ul class="social page-footer__list">
         <li class="social__item">
           <a href="http://vk.com/htmlacademy">
             <svg xmlns="http://www.w3.org/2000/svg" class="social__link  social__link--vk"

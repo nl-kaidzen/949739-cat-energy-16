@@ -1,0 +1,251 @@
+.product-card {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  list-style: none;
+  .zero-margin();
+
+  &__item {
+    width: 320px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    border-bottom: 1px solid #ededed;
+
+    &--more {
+      flex-direction: column;
+    }
+  }
+
+  &__image {
+    display: block;
+    width: 140px;
+    height: 144px;
+    margin-left: 20px;
+
+    &--big {
+      margin-left: 20px;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 140px;
+  }
+
+  &__name {
+    width: 75px;
+    margin: 0;
+    margin-top: 25px;
+    margin-right: 0;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 1.25;
+    margin-bottom: 15px;
+  }
+
+  &__button {
+    width: 280px;
+    height: 40px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+
+    &--more {
+      background-color: @grey-bg;
+      color: @text-color;
+      margin: 0 auto;
+      margin-top: 22px;
+      margin-bottom: 25px;
+    }
+  }
+
+  &__btn-plus {
+    width: 31px;
+    height: 31px;
+    background-image: url("../../img/icon-plus-mobile.svg");
+    margin: 0 auto;
+    opacity: 0.2;
+    margin-top: 27px;
+  }
+
+  &__discription {
+    width: 205px;
+    margin: 0 auto;
+    margin-top: 25px;
+    margin-bottom: 11px;
+  }
+
+  &__subtitle {
+    font-family: @font-arial;
+    .font-normal;
+    font-size: 12px;
+    line-height: 1.33;
+    color: @text-color;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .product-card {
+    width: @tablet-width;
+    padding: 0 30px;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    &__item {
+      width: 324px;
+      flex-direction: column;
+      border-bottom: none;
+      background-color: @grey-bg;
+      margin-right: 60px;
+      margin-bottom: 140px;
+
+
+      &--more {
+        background-color: #ffffff;
+        border: 1px solid  #cdcdcd;
+      }
+    }
+
+    &__item:nth-child(2n) {
+      margin-right: 0;
+    }
+
+    &__image {
+      display: block;
+      width: 160px;
+      height: 172px;
+      margin: 0 auto;
+      margin-top: -46px;
+
+      &--big {
+        display: block;
+        width: 194px;
+        height: 208px;
+        margin: 0 auto;
+        margin-top: -82px;
+      }
+    }
+
+    &__wrapper {
+      width: 324px;
+      margin: 0 auto;
+    }
+
+    &__name {
+      width: 130px;
+      text-align: center;
+      margin: 0 auto;
+      margin-top: 35px;
+      margin-bottom: 25px;
+      font-size: 20px;
+      line-height: 1;
+    }
+
+    &__button {
+      width: 280px;
+      height: 40px;
+      margin: 0 auto;
+      margin-top: 33px;
+      margin-bottom: 40px;
+
+      &--more {
+        margin-top: 85px;
+        margin-bottom: 40px;
+      }
+    }
+
+    &__btn-plus {
+      width: 61px;
+      height: 61px;
+      background-image: url("../../img/icon-plus.svg");
+      opacity: 0.2;
+      margin-top: 55px;
+    }
+
+    &__discription {
+      width: 135px;
+      margin-top: 50px;
+      margin-bottom: 28px;
+    }
+
+    &__subtitle {
+      width: 170px;
+      font-size: 16px;
+      line-height: normal;
+      text-align: center;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .product-card {
+    width: @desktop-width;
+    padding: 0;
+    margin: 0 auto;
+
+    &__item {
+      width: 245px;
+      margin-right: 80px;
+      margin-bottom: 140px;
+
+      &--more {
+        width: 245px;
+        background-color: #ffffff;
+        border: 1px solid  #cdcdcd;
+      }
+    }
+
+    &__item:nth-child(4n+1) {
+      margin-left: 40px;
+    }
+
+    &__item:nth-child(2n) {
+      margin-right: 80px;
+    }
+
+    &__item:nth-child(4n) {
+      margin-right: 0;
+    }
+
+    &__image {
+      display: block;
+      width: 160px;
+      height: 172px;
+      margin: 0 auto;
+      margin-top: -45px;
+
+      &--big {
+        display: block;
+        width: 194px;
+        height: 208px;
+        margin: 0 auto;
+        margin-top: -81px;
+      }
+    }
+
+    &__wrapper {
+      width: 245px;
+    }
+
+    &__button {
+      width: 170px;
+      height: 40px;
+
+      &--more {
+        width: 170px;
+        margin-top: 85px;
+        margin-bottom: 40px;
+      }
+    }
+
+    &__btn-plus {
+      width: 61px;
+      height: 61px;
+      background-image: url("../../img/icon-plus.svg");
+      opacity: 0.2;
+      margin-top: 55px;
+    }
+  }
+}

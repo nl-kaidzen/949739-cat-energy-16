@@ -6,9 +6,6 @@
   .zero-margin();
   align-items: center;
   align-content: center;
-  margin: 0 auto;
-  margin-top: 22px;
-  margin-bottom: 21px;
 
   &__item {
     margin-right: 38px;
@@ -38,6 +35,39 @@
     &--fb  {
       width: 10px;
       height: 19px;
+    }
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .social {
+    width: 125px;
+
+    &__item {
+      margin-right: 28px;
+    }
+
+    &__item:last-of-type {
+      margin-right: 0;
+    }
+
+    &__link {
+      display: block;
+
+      &--vk {
+        width: 30px;
+        height: 16px;
+      }
+
+      &--ig {
+        width: 23px;
+        height: 23px;
+      }
+
+      &--fb  {
+        width: 14px;
+        height: 28px;
+      }
     }
   }
 }

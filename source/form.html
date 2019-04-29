@@ -3,22 +3,25 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <header class="page-header">
-    <a href="index.html" class="main-nav__logo-link">
+    <a href="index.html" class="page-header__logo-link">
       <!--w/o link for index.html-->
       <!--remove after copy-->
-      <img src="img/logo-mobile.svg" alt="Логотип сайта Кет энерджи" class="logo" width="191" height="39">
+      <!--<img src="img/logo-mobile.svg" alt="Логотип сайта Кет энерджи" class="page-header__logo" width="191" height="39">-->
     </a>
     <nav class="main-nav">
-      <button class="main-nav__toggle">
+      <!--<button class="main-nav__toggle">
         <span class="main-nav__toggle-bg">=</span>Бургер-меню
-        <!--Icon or pseudo-element-->
-      </button>
+
+      </button>-->
+      <!--Icon or pseudo-element-->
       <ul class="main-nav__list">
         <li class="main-nav__item"><a href="index.html" class="main-nav__link">Главная</a></li>
         <li class="main-nav__item"><a href="catalog.html" class="main-nav__link">Каталог продукции</a></li>
@@ -82,18 +85,23 @@
         <span class="form__req-input  form__req-input--position">* — Обязательные поля</span>
       </form>
     </section>
+    <section class="contacts">
+      <div class="contacts__wrapper">
+        <div class="contacts__place">
+          <p class="contacts__title">Приглашаем
+            к сотрудничеству
+            дилеров!</p>
+          <address class="contacts__address">ул. Большая Конюшенная, д. 19/8
+            Санкт-Петербург</address>
+        </div>
+      </div>
+      <a href="map.html" class="contacts__map-link">
+        <img src="img/bg-map-mobile@1x.png" alt="Карта с указанием местаположения магазина Кэт Энерджи"
+          class="contacts__map">
+      </a>
+    </section>
   </main>
   <footer class="page-footer">
-    <div class="page-footer__place">
-      <p class="page-footer__title">Приглашаем
-        к сотрудничеству
-        дилеров!</p>
-      <address class="page-footer__address">ул. Большая Конюшенная, д. 19/8
-        Санкт-Петербург</address>
-    </div>
-    <a href="map.html" class="page-footer__map-link">
-      <img src="img/bg-map-mobile@1x.png" alt="Карта с указанием местаположения магазина Кэт Энерджи" class="map">
-    </a>
     <div class="page-footer__footer-wrap">
       <div class="page-footer__logo-wrap">
         <a href="index.html" class="page-footer__logo-link">
@@ -102,7 +110,7 @@
           <img src="img/logo-footer.svg" alt="Логотип интернет-магазина Кэт Энерджи" class="page-footer__logo">
         </a>
       </div>
-      <ul class="page-footer__list  social">
+      <ul class="social page-footer__list">
         <li class="social__item">
           <a href="http://vk.com/htmlacademy">
             <svg xmlns="http://www.w3.org/2000/svg" class="social__link  social__link--vk"
