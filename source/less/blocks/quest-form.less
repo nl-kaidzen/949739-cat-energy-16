@@ -14,13 +14,36 @@
   }
 
   &__subtitle {
-    display: block;
-    width:230px;
+    width: 230px;
     margin-left: 20px;
     margin-bottom: 35px;
     text-transform: uppercase;
     font-family: @font-oswald-r;
     font-size: 14px;
     line-height: 1.29;
+    color: @heading-color;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .quest-form {
+    width: @tablet-width;
+    margin: 0 auto;
+
+    &__heading {
+      font-size: 60px;
+      line-height: 1;
+      margin-top: 80px;
+      margin-left: 40px;
+    }
+
+    &__subtitle {
+      width: 325px;
+      margin-left: 70px;
+      margin-top: 50px;
+      margin-bottom: 50px;
+      font-size: 20px;
+      line-height: 1.5;
+    }
   }
 }

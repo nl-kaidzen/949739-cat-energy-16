@@ -3,6 +3,7 @@
   flex-direction: column;
   width: 320px;
   background-color: @grey-bg;
+  margin: 0 auto;
 
   &__footer-wrap {
     display: flex;
@@ -53,6 +54,39 @@
     margin: 0 auto;
     margin-top: 22px;
     margin-bottom: 22px;
+  }
+
+  &__copyright-academy {
+    font-family: @font-arial;
+    font-size: 16px;
+    line-height: 1;
+    text-align: left;
+    text-decoration: none;
+    color: @text-color;   
+
+    &:active {
+      color: rgba(68, 68, 68, 0.3);
+    }
+  }
+
+  &__logo-academy {
+    width: 27px;
+    height: 34px;
+
+    &:hover,
+    &:focus {
+      opacity: 1;
+      path, circle {
+        fill: @btn-bg;
+      }
+    }
+
+    &:active {
+      opacity: 0.3;
+      path, circle {
+        fill: @btn-bg;
+      }
+    }
   }
 }
 

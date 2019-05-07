@@ -36,6 +36,21 @@
       width: 10px;
       height: 19px;
     }
+
+    &:hover,
+    &:focus {
+      opacity: 1;
+      path, circle {
+        fill: @btn-bg;
+      }
+    }
+
+    &:active {
+      opacity: 0.3;
+      path, circle {
+        fill: @btn-bg;
+      }
+    }
   }
 }
 

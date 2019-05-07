@@ -1,0 +1,173 @@
+.extra {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  margin: 0 auto;
+
+  &__heading {
+    .zero-margin();
+    width: 280px;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ededed;
+  }
+
+  &__list {
+    .zero-margin();
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__item {
+    width: 280px;
+    margin: 0 auto;
+    border-bottom: 1px solid #ededed;
+
+  }
+
+  &__name {
+    .zero-margin();
+    padding: 14px 0;
+    text-transform: uppercase;
+    color: @label-color;
+  }
+
+  &__features {
+    width: 280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__feature,
+  &__value {
+    font-family: @font-arial;
+    .font-normal;
+    font-size: 14px;
+    line-height: 1;
+    color: @text-color;
+  }
+
+  &__button {
+    margin: 15px auto;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .extra {
+    width: @tablet-width;
+
+    &__heading {
+      font-size: 36px;
+      width: 340px;
+      margin-top: 70px;
+      margin-left: 30px;
+      margin-bottom: 75px;
+      padding-bottom: 0;
+      border: none;
+    }
+
+    &__item {
+      display: flex;
+      flex-wrap: wrap;
+      width: 708px;
+      margin: 0 auto;
+      border: 1px solid #ededed;
+    }
+
+    &__name {
+      width: 160px;
+      padding: 0;      /*delete custom properties*/
+      padding-top: 27px;
+      margin-left: 40px;
+      font-size: 20px;
+    }
+
+    &__features {
+      width: auto;
+      margin: 0 auto;
+      margin-right: 40px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__feature {
+      margin-right: 52px;
+    }
+
+    &__feature,
+    &__value {
+      margin-top: 30px;
+      font-size: 16px;
+      line-height: 1.25;
+  }
+
+    &__button {
+      width: 634px;
+      margin: 27px auto;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .extra {
+    width: 895px;
+    margin-left: 40px;
+
+    &__heading {
+      font-size: 36px;
+      width: 340px;
+      margin-top: 70px;
+      margin-left: 0px;
+      margin-bottom: 75px;
+      padding-bottom: 0;
+      border: none;
+    }
+
+    &__item {
+      display: flex;
+      justify-content: flex-end;
+      flex-wrap: wrap;
+      flex-direction: row;
+      width: 895px;
+      margin: 0 auto;
+      border: none;
+      border-top: 1px solid #ededed;
+      border-bottom: 1px solid #ededed;
+    }
+
+    &__name {
+      margin-left: 0;
+      margin-right: auto;
+      font-size: 20px;
+    }
+
+    &__features {
+      width: 390px;   /*350px width + padding-right 40px to button*/
+      margin: 0;
+
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__feature {
+      margin-right: 52px;
+    }
+
+    &__value {
+      margin-right: 40px;
+    }
+
+    &__button {
+      width: 245px;
+      margin: 15px 0;
+    }
+
+
+
+
+
+  }
+}
