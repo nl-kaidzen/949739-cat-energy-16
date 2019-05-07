@@ -1,0 +1,93 @@
+.input {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 175px;   /*Basic parameters*/
+  height: 45px;   /*Basic parameters*/
+  font-family: @font-oswald-r;
+  line-height: 1.13;
+  font-size: 16px;
+  .zero-margin();
+  padding-left: 16px;
+  box-sizing: border-box;
+  border: 1px solid rgba(205, 205, 205, 0.5);
+
+  &:hover {
+    border: 1px solid rgba(205, 205, 205, 1);
+
+    & + .input__logo-mail {
+      path {
+        fill: @label-color;
+      }
+    }
+  }
+
+  &:focus {
+    border: 2px solid @text-color;
+    outline: none;
+    padding-left: 15px;
+
+    & + .input__logo-mail {
+      path {
+        fill: @btn-bg;
+      }
+    }
+  }
+
+  &:invalid {
+    border: 2px solid #ff8282;
+    outline: none;
+    padding-left: 15px;
+
+    & + .input__logo-mail {
+      path {
+        fill: #ff8282;
+      }
+    }
+  }
+
+  &__logo-mail {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    width: 18px;
+    height: 14px;
+    path {
+      fill: @label-color;
+    }
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .input {
+    line-height: 1;
+    font-size: 20px;
+    padding-left: 20px;
+
+    &:focus {
+      padding-left: 19px;
+    }
+
+    &__logo-mail {
+      top: 19px;
+      right: 90px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .input {
+    line-height: 1;
+    font-size: 20px;
+    padding-left: 20px;
+
+    &:focus {
+      padding-left: 19px;
+    }
+
+    &__logo-mail {
+      top: 19px;
+      right: 20px;
+    }
+  }
+}

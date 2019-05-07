@@ -14,33 +14,12 @@
     margin-right: auto;
 
     &--radio {
-      margin-left: 0;
+      margin-left: 66px;
     }
   }
 
   &__input {
-    display: flex;
-    align-items: center;
-    width: 175px;
-    height: 45px;
-    font-family: @font-oswald-r;
-    line-height: 1.13;
-    font-size: 16px;
-    .zero-margin();
-    padding-left: 16px;
-    box-sizing: border-box;
-    border: 1px solid rgba(205, 205, 205, 0.5);
     margin-right: 20px;
-
-    &:hover {
-      border: 1px solid rgba(205, 205, 205, 1);
-    }
-
-    &:focus {
-      border: 2px solid @text-color;
-      outline: none;
-      padding-left: 15px;
-    }
 
     &--name {
       width: 230px;
@@ -124,6 +103,7 @@
   }
 
   &__contacts-item {
+    position: relative;
     display: flex;
     width: 100%;
     align-items: center;
@@ -182,6 +162,10 @@
     margin-bottom: 12px;
   }
 
+  &__label--other {
+    margin-left: 66px;
+  }
+
   &__cbox {
     margin-left: 20px;
   }
@@ -210,7 +194,6 @@
       margin-left: 70px;
       margin-right: auto;
 
-      &--radio,
       &--items {
         margin-left: 0;
       }
@@ -279,8 +262,8 @@
       border: none;
     }
 
-    &__radio {
-      margin-left: 28px;
+    &__label--radio {
+      margin-left: 88px;
       margin-right: 20px;
     }
 
@@ -353,6 +336,10 @@
       margin-right: 0;
     }
 
+    &__label--other {
+      margin-left: 60px;
+    }
+
     &__cbox {
       margin-left: 0;
     }
@@ -383,18 +370,12 @@
       margin-left: 0;
       margin-right: auto;
 
-      &--radio,
       &--items {
         margin-left: 0;
       }
     }
 
     &__input {
-      width: 497px;
-      height: 52px;
-      line-height: 1;
-      font-size: 20px;
-      padding-left: 20px;
       margin-right: 0;
 
       &--name {
@@ -452,8 +433,8 @@
       border: none;
     }
 
-    &__radio {
-      margin-left: 28px;
+    &__label--radio {
+      margin-left: 88px;
       margin-right: 20px;
     }
 
@@ -474,6 +455,7 @@
     }
 
     &__contacts-item {
+
       width: 570px;
       margin: 0 40px;
     }
@@ -523,6 +505,10 @@
 
     &__other-item:nth-child(2n) {
       margin-right: 0;
+    }
+
+    &__label--other {
+      margin-left: 60px;
     }
 
     &__cbox {
