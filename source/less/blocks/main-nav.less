@@ -16,46 +16,6 @@
     margin-right: 0;
   }
 
-  &--closed .main-nav__toggle::before {
-    content: "";
-    display: block;
-    width: 25px;
-    height: 19px;
-    margin-left: 14px;
-    background-image: url("../../img/icon-mobile-menu.svg");
-    background-color: #ffffff;
-    background-repeat: no-repeat;
-  }
-
-  &--closed .main-nav__toggle:active::before {
-    opacity: 0.3;
-  }
-
-  &--opened .main-nav__toggle {
-    &::before {
-      content: "";
-      display: block;
-      width: 19px;
-      height: 19px;
-      margin-left: 17px;
-      background-image: url("../../img/icon-close.svg");
-      background-color: #ffffff;
-      background-repeat: no-repeat;
-    }
-
-    &:active::before {
-      opacity: 0.3;
-    }
-  }
-
-  &--closed .main-nav__list {
-    display: none;
-  }
-
-  &--nojs .main-nav__toggle {
-    display: none;
-  }
-
   &__list {
     display: flex;
     flex-direction: column;
@@ -91,6 +51,50 @@
 
     &:active {
       color: rgba(17, 17, 17, 0.3);
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .main-nav {
+    &--closed .main-nav__toggle::before {
+      content: "";
+      display: block;
+      width: 25px;
+      height: 19px;
+      margin-left: 14px;
+      background-image: url("../../img/icon-mobile-menu.svg");
+      background-color: #ffffff;
+      background-repeat: no-repeat;
+    }
+
+    &--closed .main-nav__toggle:active::before {
+      opacity: 0.3;
+    }
+
+    &--opened .main-nav__toggle {
+      &::before {
+        content: "";
+        display: block;
+        width: 19px;
+        height: 19px;
+        margin-left: 17px;
+        background-image: url("../../img/icon-close.svg");
+        background-color: #ffffff;
+        background-repeat: no-repeat;
+      }
+
+      &:active::before {
+        opacity: 0.3;
+      }
+    }
+
+    &--closed .main-nav__list {
+      display: none;
+    }
+
+    &--nojs .main-nav__toggle {
+      display: none;
     }
   }
 }
@@ -156,10 +160,10 @@
 
     &__item {
       background-color: transparent;
-      margin-left: 36px;
+      margin-left: 34px;
 
       &:first-of-type .main-nav__link--index {
-        padding-bottom: 9px;
+        padding-bottom: 11px;
         border-bottom: 2px solid #ffffff;
       }
     }
@@ -171,7 +175,7 @@
       line-height: 1.25;
 
       color: @heading-color;
-      margin-top: 73px;
+      margin-top: 75px;
 
       &:hover {
         color: rgba(17, 17, 17, 0.6);

@@ -10,6 +10,8 @@
     color: @heading-color;
     .zero-margin();
     margin-left: 20px;
+    margin-top: -3px;
+    margin-bottom: 8px;
   }
 
   &__list {
@@ -38,6 +40,10 @@
     background-color: @btn-bg;
   }
 
+  &__icon {
+    margin: 5px;
+  }
+
   &__description {
     display: block;
     width: 195px;
@@ -63,8 +69,9 @@
     &__heading {
       font-size: 60px;
       line-height: 1;
-      margin-left: 33px;
-      margin-top: 20px;
+      margin-left: 30px;
+      margin-top: 15px;
+      margin-bottom: 12px;
     }
 
     &__list {
@@ -81,8 +88,8 @@
       width: 280px;
       height: 228px;
       margin-top: 60px;
-      margin-right: 148px;
-      margin-bottom: 30px;
+      margin-right: 104px;
+      margin-bottom: 29px;
     }
 
     &__item:nth-child(2n) {
@@ -96,9 +103,13 @@
       margin-left: 0;
     }
 
+    &__icon {
+      margin: 15px;
+    }
+
     &__description {
       width: 250px;
-      margin-top: 35px;
+      margin-top: 29px;
       font-size: 16px;
       line-height: 1.5;
     }
@@ -109,7 +120,7 @@
       font-family: @font-oswald-r;
       font-size: 281px;
       color: @grey-bg;
-      top: -60px;
+      top: -109px;
       left: 118px;
       z-index: -1;
     }
@@ -124,14 +135,14 @@
     &__heading {
       font-size: 60px;
       margin-left: 40px;
-      margin-top: 45px;
+      margin-top: 43px;
     }
 
     &__list {
       box-sizing: border-box;
       flex-direction: row;
       flex-wrap: wrap;
-      justify-content: space-between;
+      justify-content: flex-start;
       width: @desktop-width;
       margin: 0 auto;
       padding: 0 40px;
@@ -141,15 +152,15 @@
       display: flex;
       position: relative;
       flex-direction: column;
-      width: 280px;
+      width: 245px;
       height: 228px;
       margin-top: 60px;
-      margin-right: 30px;
+      margin-right: 80px;
       margin-bottom: 30px;
     }
 
     &__item:nth-child(2n) {
-      margin-right: 30px;
+      margin-right: 80px;
     }
 
     &__item:nth-child(4n) {

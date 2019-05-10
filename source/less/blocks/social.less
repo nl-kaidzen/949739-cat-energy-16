@@ -1,19 +1,21 @@
 .social {
   display: flex;
-  width: 125px;
+  min-width: 125px;
+  max-width: 220px;
   flex-direction: row;
   list-style: none;
   .zero-margin();
   align-items: center;
   align-content: center;
+  justify-content: space-between;
 
-  &__item {
+  /*&__item {
     margin-right: 38px;
   }
 
   &__item:last-of-type {
     margin-right: 0;
-  }
+  }*/
 
   &__link {
     display: block;
@@ -30,11 +32,14 @@
     &--ig {
       width: 17px;
       height: 17px;
+      padding: 0 2px;
     }
 
     &--fb {
       width: 10px;
       height: 19px;
+      padding-left: 4px;
+      padding-right: 6px;
     }
 
     &:hover,
@@ -60,15 +65,8 @@
 
 @media (min-width: @tablet-width) {
   .social {
-    width: 125px;
-
-    &__item {
-      margin-right: 28px;
-    }
-
-    &__item:last-of-type {
-      margin-right: 0;
-    }
+    min-width: 125px;
+    max-width: 300px;
 
     &__link {
       display: block;
@@ -81,11 +79,14 @@
       &--ig {
         width: 23px;
         height: 23px;
+        padding-left: 3.5px;
+        padding-right: 3.5px;
       }
 
       &--fb {
         width: 14px;
         height: 28px;
+        padding-right: 16px;
       }
     }
   }

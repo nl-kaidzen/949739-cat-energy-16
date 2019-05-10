@@ -12,6 +12,7 @@
     line-height: 1.67;
     .zero-margin();
     margin-left: 20px;
+    margin-top: 17px;
   }
 
   &__description {
@@ -23,6 +24,7 @@
     color: @text-color;
     .zero-margin();
     margin-left: 20px;
+    margin-top: 23px;
   }
 
   &__list {
@@ -32,13 +34,15 @@
     justify-content: space-between;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 25px;
   }
 
   &__item {
     display: flex;
+    position: relative;
     flex-direction: column;
     width: 124px;
-    border: 1px solid black; /*CHANGE AFTER TESTING*/
+    border: 1px solid #cdcdcd; /*CHANGE AFTER TESTING*/
     border-radius: 3px;
   }
 
@@ -50,6 +54,8 @@
     text-align: center;
     text-transform: uppercase;
     color: @heading-color;
+    padding-top: 13px;
+    padding-bottom: 10px;
   }
 
   &__goal-description {
@@ -58,10 +64,13 @@
     font-size: 12px;
     line-height: 1;
     text-align: center;
-    width: 60px;
+    width: 57px;
+    padding: 0 15px;
     margin-left: auto;
     margin-right: auto;
     color: @text-color;
+    background-color: @grey-bg;
+    margin-bottom: -17px;
   }
 
   &__food-cost {
@@ -72,32 +81,8 @@
     color: @heading-color;
     margin: 0 auto;
     text-transform: uppercase;
-    margin-top: 20px;
-    margin-bottom: 40px;
-  }
-
-  &__img {
-    display: block;
-    width: 311px;
-    height: 232px;
-  }
-
-  &__nav {
-    display: flex;
-    width: 200px;
-    justify-content: space-between;
-    margin: 0 auto;
-    margin-bottom: 35px;
-  }
-
-  &__link {
-    display: block;
-    font-family: @font-oswald-r;
-    font-size: 16px;
-    line-height: 1.25;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: @heading-color;
+    margin-top: 35px;
+    margin-bottom: 33px;
   }
 }
 
@@ -118,6 +103,7 @@
     &__heading {
       font-size: 60px;
       line-height: 1;
+      margin-top: 60px;
       margin-left: 30px;
     }
 
@@ -126,7 +112,7 @@
       font-size: 16px;
       line-height: 1.5;
       margin-left: 30px;
-      margin-top: 60px;
+      margin-top: 64px;
     }
 
     &__list {
@@ -144,31 +130,31 @@
     &__goal {
       font-size: 30px;
       line-height: 1.23;
+      padding-top: 16px;
+      padding-bottom: 17px;
     }
 
     &__goal-description {
+      position: absolute;
       font-size: 14px;
       line-height: 1;
-      width: 130px;
+      width: 140px;
+      padding: 0;
+      text-align: center;
+      background-color: #ffffff;
+      top: 62px;
+      left: 11px;
+      right: 11px;
     }
 
     &__food-cost {
-      width: 170px;
-      font-size: 18px;
-      line-height: 1.43;
+      width: 175px;
+      font-size: 20px;
+      line-height: 1.5;
       text-align: right;
-      margin-top: 65px;
+      margin-top: 60px;
+      margin-right: 31px;
       margin-bottom: 0;
-    }
-
-    &__img {
-      display: block;
-      width: 676px;
-      height: 500px;
-    }
-
-    &__nav {
-      width: 570px;
     }
   }
 }
