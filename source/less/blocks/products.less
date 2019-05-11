@@ -3,11 +3,23 @@
   margin: 0 auto;
 
   &__heading {
+    position: relative;
     .zero-margin();
     margin-left: 20px;
-    margin-top: 28px;
-    margin-bottom: 35px;
+    margin-top: 18px;
+    margin-bottom: 33px;
     font-size: 36px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      display: block;
+      width: 320px;
+      height: 1px;
+      background-color: #dcdcdc;
+      left: -20px;
+      top: 85px;
+    }
   }
 }
 
@@ -18,9 +30,13 @@
     &__heading {
       font-size: 60px;
       line-height: 1;
-      margin-left: 20px;
-      margin-top: 65px;
-      margin-bottom: 15px;
+      margin-left: 30px;
+      margin-top: 41px;
+      margin-bottom: 25px;
+
+      &::after {
+        display: none;
+      }
     }
   }
 }
@@ -33,9 +49,9 @@
     &__heading {
       font-size: 60px;
       line-height: 1;
-      margin-left: 20px;
-      margin-top: 65px;
-      margin-bottom: 15px;
+      margin-left: 40px;
+      margin-top: 60px;
+      margin-bottom: 22px;
     }
 
     &__list {

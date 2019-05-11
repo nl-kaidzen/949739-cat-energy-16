@@ -8,9 +8,9 @@
     .zero-margin();
     width: 280px;
     margin: 0 auto;
-    margin-top: 30px;
-    padding-bottom: 30px;
-    border-bottom: 1px solid #ededed;
+    margin-top: 21px;
+    padding-bottom: 28px;
+    border-bottom: 1px solid #dcdcdc;
   }
 
   &__list {
@@ -28,7 +28,7 @@
 
   &__name {
     .zero-margin();
-    padding: 14px 0;
+    padding: 10px 0;
     text-transform: uppercase;
     color: @label-color;
   }
@@ -50,7 +50,8 @@
   }
 
   &__button {
-    margin: 15px auto;
+    margin: 13px auto;
+    margin-bottom: 17px;
   }
 }
 
@@ -61,9 +62,9 @@
     &__heading {
       font-size: 36px;
       width: 340px;
-      margin-top: 70px;
-      margin-left: 30px;
-      margin-bottom: 75px;
+      margin-top: 58px;
+      margin-left: 67px;
+      margin-bottom: 72px;
       padding-bottom: 0;
       border: none;
     }
@@ -74,12 +75,17 @@
       width: 708px;
       margin: 0 auto;
       border: 1px solid #ededed;
+      border-bottom: none;
+    }
+
+    &__item:last-of-type {
+      border-bottom: 1px solid #ededed;
     }
 
     &__name {
       width: 160px;
       padding: 0;      /*delete custom properties*/
-      padding-top: 27px;
+      padding-top: 21px;
       margin-left: 40px;
       font-size: 20px;
     }
@@ -87,7 +93,7 @@
     &__features {
       width: auto;
       margin: 0 auto;
-      margin-right: 40px;
+      margin-right: 37px;
       display: flex;
       justify-content: space-between;
     }
@@ -105,7 +111,8 @@
 
     &__button {
       width: 634px;
-      margin: 27px auto;
+      margin: 20px auto;
+      margin-bottom: 27px;
     }
   }
 }
@@ -118,9 +125,9 @@
     &__heading {
       font-size: 36px;
       width: 340px;
-      margin-top: 70px;
-      margin-left: 0;
-      margin-bottom: 75px;
+      margin-top: 64px;
+      margin-left: -1px;
+      margin-bottom: 72px;
       padding-bottom: 0;
       border: none;
     }
@@ -138,13 +145,13 @@
     }
 
     &__name {
-      margin-left: 0;
+      margin-left: -1px;
       margin-right: auto;
       font-size: 20px;
     }
 
     &__features {
-      width: 390px;   /*350px width + padding-right 40px to button*/
+      width: 325px;   /*350px width + padding-right 40px to button*/
       margin: 0;
 
       display: flex;
@@ -156,7 +163,9 @@
     }
 
     &__value {
-      margin-right: 40px;
+      margin-right: 37px;
+      width: 44px;
+      text-align: left;
     }
 
     &__button {
