@@ -1,0 +1,147 @@
+.contacts {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+
+  &__place {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    background-color: #ffffff;
+
+    &--bgcolor {
+      background-color: @grey-bg;
+    }
+  }
+
+  &__title {
+    display: flex;
+    width: 125px;
+
+    font-size: 16px;
+    line-height: 1.25;
+    font-family: @font-oswald-r;
+    color: @heading-color;
+    text-transform: uppercase;
+    .zero-margin();
+    margin-top: 30px;
+    margin-left: 19px;
+    margin-bottom: 24px;
+  }
+
+  &__address {
+    display: flex;
+    width: 137px;
+
+    font-size: @text-size;
+    line-height: 1.43;
+    font-family: @font-arial;
+    color: @text-color;
+
+    .font-normal();
+    .zero-margin();
+    margin-top: 31px;
+    margin-right: 18px;
+    margin-left: 19px;
+  }
+
+  &__map-link {
+    width: 100%;
+    height: 362px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .contacts {
+    width: 100%;
+    margin: 0 auto;
+
+    &__wrapper {
+      position: relative;
+      display: block;
+      width: 100%;
+      margin: 0 auto;
+
+      &--bgcolor {
+        background-color: @grey-bg;
+      }
+    }
+
+    &__place {
+      width: @tablet-width;
+      justify-content: space-between;
+      margin: 0 auto;
+
+      &--bgcolor {
+        background-color: @grey-bg;
+      }
+    }
+
+    &__title {
+      width: 155px;
+      font-size: 20px;
+      line-height: 1.25;
+      margin-top: 65px;
+      margin-left: 71px;
+      margin-bottom: 62px;
+    }
+
+    &__address {
+      width: 155px;
+      font-size: 16px;
+      line-height: 1.25;
+      text-align: right;
+
+      margin-top: 63px;
+      margin-right: 72px;
+      margin-left: none;
+    }
+
+    &__map {
+      width: 100%;
+      height: 400px;
+    }
+
+    &__map-link {
+      width: 100%;
+      height: 400px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts {
+    width: 100%;
+
+    &__wrapper {
+      width: @desktop-width;
+    }
+
+    &__place {
+      position: absolute;
+      top: 95px;
+      margin-left: 40px;
+      width: 570px;
+      justify-content: space-between;
+
+      &--bgcolor {
+        background-color: #ffffff;
+      }
+    }
+
+    &__title {
+      width: 155px;
+      font-size: 20px;
+      line-height: 1.25;
+      margin-top: 70px;
+      margin-left: 76px;
+      margin-bottom: 60px;
+    }
+
+    &__address {
+      width: 155px;
+      text-align: left;
+      margin-right: 90px;
+    }
+  }
+}

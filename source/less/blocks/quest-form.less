@@ -1,0 +1,49 @@
+.quest-form {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 320px;
+
+  &__heading {
+    font-size: 36px;
+    line-height: 1.67;
+    .zero-margin();
+    margin-top: 27px;
+    margin-left: 20px;
+    color: @heading-color;
+  }
+
+  &__subtitle {
+    width: 230px;
+    margin-left: 20px;
+    margin-bottom: 35px;
+    text-transform: uppercase;
+    font-family: @font-oswald-r;
+    font-size: 14px;
+    line-height: 1.29;
+    color: @heading-color;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .quest-form {
+    width: @tablet-width;
+    margin: 0 auto;
+
+    &__heading {
+      font-size: 60px;
+      line-height: 1;
+      margin-top: 80px;
+      margin-left: 40px;
+    }
+
+    &__subtitle {
+      width: 325px;
+      margin-left: 70px;
+      margin-top: 50px;
+      margin-bottom: 50px;
+      font-size: 20px;
+      line-height: 1.5;
+    }
+  }
+}
