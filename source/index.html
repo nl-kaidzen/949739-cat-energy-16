@@ -29,8 +29,12 @@
     <section class="promo  page-main__promo">
       <h1 class="heading  promo__heading">Функциональное питание для котов</h1>
       <p class="promo__description">Занялся собой? Займись котом!</p>
-      <img src="img/index-can-mobile@1x.png" alt="Фотография банки функционального питания" class="promo__img"
-        width="280" height="270">
+      <picture>
+        <source srcset="img/index-can-desktop@1x.png" media="(min-width: 1300px)">
+        <source srcset="img/index-can-tablet@1x.jpg" media="(min-width: 768px)">
+        <source srcset="img/index-can-mobile@1x.png">
+        <img src="img/index-can-desktope@1x.png" alt="Фотография банки функционального питания" class="promo__img" width="280" height="270">
+      </picture>
       <a href="form.html" class="button promo__btn">Подобрать программу</a>
     </section>
     <section class="plans  page-main__plans">
@@ -142,8 +146,13 @@
         </div>
       </div>
       <a href="map.html" class="contacts__map-link">
-        <img src="img/bg-map-mobile@1x.png" alt="Карта с указанием местаположения магазина Кэт Энерджи" class="contacts__map"
-        width="320" height="362">
+        <picture>
+          <source srcset="img/bg-map-desktop@1x.png" media="(min-width: 1300px)">
+          <source srcset="img/bg-map-tablet@1x.png" media="(min-width: 768px)">
+          <source srcset="img/bg-map-mobile@1x.png">
+          <img src="img/bg-map-desktope@1x.png" alt="Карта с указанием местаположения магазина Кэт Энерджи" class="contacts__map"
+            width="320" height="362">
+        </picture>
       </a>
     </section>
   </main>

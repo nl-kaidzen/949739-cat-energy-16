@@ -129,15 +129,20 @@
       <div class="contacts__wrapper  contacts__wrapper--bgcolor">
         <div class="contacts__place  contacts__place--bgcolor">
           <p class="contacts__title">Приглашаем
-            к сотрудничеству
+            к&#160;сотрудничеству
             дилеров!</p>
           <address class="contacts__address">ул. Большая Конюшенная, д. 19/8
             Санкт-Петербург</address>
         </div>
       </div>
       <a href="map.html" class="contacts__map-link">
-        <img src="img/bg-map-mobile@1x.png" alt="Карта с указанием местаположения магазина Кэт Энерджи"
-          class="contacts__map">
+        <picture>
+          <source srcset="img/bg-map-desktop@1x.png" media="(min-width: 1300px)">
+          <source srcset="img/bg-map-tablet@1x.png" media="(min-width: 768px)">
+          <source srcset="img/bg-map-mobile@1x.png">
+          <img src="img/bg-map-desktope@1x.png" alt="Карта с указанием местаположения магазина Кэт Энерджи" class="contacts__map"
+            width="320" height="362">
+        </picture>
       </a>
     </section>
   </main>
