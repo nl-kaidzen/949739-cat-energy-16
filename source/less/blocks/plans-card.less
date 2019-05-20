@@ -70,6 +70,7 @@
   }
 
   &__link {
+    width: auto;
     justify-content: flex-start;
     box-sizing: border-box;
     padding-left: 19px;
@@ -79,14 +80,35 @@
     line-height: 1;
     margin-top: 8px;
     margin-bottom: 9px;
+    position: relative;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 25px;
+      height: 12px;
+      position: absolute;
+      right: -37px;
+      background-image: url("../img/icon-right-arrow-long.svg");
+    }
 
     &:hover {
       background-color: transparent;
+
+      &::after {
+        width: 34px;
+        right: -46px;
+        background-image: url("../img/icon-right-arrow-verylong.svg");
+      }
     }
 
     &:active {
       color: rgba(17, 17, 17, 0.3);
       background-color: transparent;
+
+      &::after {
+        opacity: 0.3;
+      }
     }
   }
 }
@@ -147,8 +169,20 @@
       margin-left: 53px;
       margin-top: 35px;
       margin-bottom: 61px;
+      margin-right: 150px;
       font-size: 20px;
       height: 20px;
+
+      &::after {
+        right: -50px;
+      }
+
+      &:hover {
+        &::after {
+          width: 34px;
+          right: -59px;
+        }
+      }
     }
   }
 }

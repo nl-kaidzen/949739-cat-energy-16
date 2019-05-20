@@ -186,7 +186,12 @@
           <a href="#" class="button  product-card__button">Заказать</a>
         </li>
         <li class="product-card__item">
-          <img src="http://placehold.it/140x144" alt="Фото Кэт Энерджи курица" class="product-card__image">
+          <picture class="product-card__img-wrapper">
+            <source srcset="img/buckwheat-small-desktop@1x.png" media="(min-width:1300px)">
+            <source srcset="img/buckwheat-small-tablet@1x.png" media="(min-width:768px)">
+            <source srcset="img/buckwheat-small-mobile@1x.jpg">
+            <img src="http://placehold.it/140x144" alt="Фото Кэт Энерджи рис" class="product-card__image">
+          </picture>
           <div class="product-card__wrapper">
             <h3 class="heading  product-card__name">Cat energy slim 500 г</h3>
             <ul class="feature-list  product-card__features">

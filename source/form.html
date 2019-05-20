@@ -16,8 +16,8 @@
       <!--<img src="img/logo-mobile.svg" alt="Логотип сайта Кет энерджи" class="page-header__logo" width="191" height="39">-->
     </a>
     <nav class="main-nav  main-nav--opened  main-nav--nojs">
-        <button class="main-nav__toggle"></button>
-        <!--Icon or pseudo-element-->
+      <button class="main-nav__toggle"></button>
+      <!--Icon or pseudo-element-->
       <ul class="main-nav__list">
         <li class="main-nav__item"><a href="index.html" class="main-nav__link">Главная</a></li>
         <li class="main-nav__item"><a href="catalog.html" class="main-nav__link">Каталог продукции</a></li>
@@ -32,97 +32,115 @@
       <p class="quest-form__subtitle">Заполните анкету и мы подберем
         программу питания для вашего кота</p>
       <form action="http://echo.htmlacademy.ru" class="quest-form__form  form" method="POST">
-        <ul class="form__main-info-list">
-          <li class="form__main-info-item">
-            <label for="name" class="form__label  form__label--name"> Имя:* </label>
-            <input type="text" placeholder="БАРСИК" name="name" id="name" class="input  form__input  form__input--name">
-          </li>
-          <li class="form__main-info-item">
-            <label for="weight" class="form__label  form__label--weight"> Вес (кг):*</label>
-            <input type="text" placeholder="7" name="weight" id="weight" class="input  form__input  form__input--weight">
-          </li>
-          <li class="form__main-info-item">
-            <label for="age" class="form__label form__label--age"> Возраст (лет): </label>
-            <input type="text" placeholder="7" name="age" id="age" class="input  form__input  form__input--age">
-          </li>
-        </ul>
-        <ul class="form__target-list">
-          <li class="form__target-item">
-            <label for="weight-less" class="form__label  form__label--radio  radio__label">  <!--common styles  __  positioning  __  specific styles from block RADIO-->
-              <input type="radio" class="radio  form__radio" name="form__radio" id="weight-less" value="Похудение" checked>
-              <span class="radio__custom"></span>
-              Похудение
-            </label>
-          </li>
-          <li class="form__target-item">
-            <label for="weight-more" class="form__label  form__label--radio  radio__label">  <!--common styles  __  positioning  __  specific styles from block RADIO-->
-              <input type="radio" class="radio  form__radio" name="form__radio" id="weight-more" value="Набор массы">
-              <span class="radio__custom"></span>
-              Набор массы
-            </label>
-          </li>
-          <li class="form__target-item">
-            <label for="dont-know" class="form__label  form__label--radio  radio__label">  <!--common styles  __  positioning  __  specific styles from block RADIO-->
-              <input type="radio" class="radio  form__radio" name="form__radio" id="dont-know" value="Похудение">
-              <span class="radio__custom"></span>
-              Не знаю (Нужен ваш совет)
-            </label>
-          </li>
-        </ul>
-        <h2 class="heading form__contacts-heading">Контактные данные
-          (владельца кота)</h2>
-        <ul class="form__contacts-list">
-          <li class="form__contacts-item">
-            <label for="owner-mail" class="form__label  form__label--owner-mail">E-mail:*</label>
-            <input type="email" class="input  form__input  form__input--email" name="owner-email"
-              placeholder="KUKLACHEV@GMAIL.COM" id="owner-mail">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 13" class="input__logo-mail  form__input-mail-logo">
-              <path d="M15.6 11.6H1.4V5.8H0V13h17V5.8h-1.4v5.8zM0 0v2.3l8.5 7.1L17 2.3V0H0zm15.6 1.6L8.5 7.5 1.4 1.6v-.2h14.2v.2z"/>
-            </svg>
-          </li>
-          <li class="form__contacts-item">
-            <label for="phone" class="form__label  form__label--owner-phone">Телефон:*</label>
-            <input type="tel" name="owner-tel" id="phone" class="input  form__input  form__input--phone"
-              placeholder="8 (960) 900-60-90" pattern="8\s[0-9]{3}\s[0-9]{3}-[0-9]{2}-[0-9]{2}">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="input__phone  form__input-phone-logo">
-                <path d="M17.9 9.4H9.4v1.2h8.5l-2.1 2.1.9.9 3.1-3.1c.2-.2.2-.6 0-.9l-3.1-3.1-.9.9 2.1 2zM8.1 19.4v-6.2c0-.3-.3-.6-.6-.6H3.1c0 .7.6 1.2 1.2 1.2h2.5v5H3.1c-1 .1-1.8-.7-1.9-1.7v-14c0-1 .8-1.8 1.7-1.8H6.8v5H4.4c-.7 0-1.2.6-1.2 1.2h4.4c.3 0 .6-.3.6-.6V.6C8.1.3 7.8 0 7.5 0H3.1C1.5-.1.1 1.2 0 2.9V16.8c-.1 1.7 1.2 3.1 2.9 3.1H7.5c.3.1.6-.2.6-.5z"/>
+        <section class="form__main-info">
+          <ul class="form__main-info-list">
+            <li class="form__main-info-item">
+              <label for="name" class="form__label  form__label--name"> Имя:* </label>
+              <input type="text" placeholder="БАРСИК" name="name" id="name"
+                class="input  form__input  form__input--name">
+            </li>
+            <li class="form__main-info-item">
+              <label for="weight" class="form__label  form__label--weight"> Вес (кг):*</label>
+              <input type="text" placeholder="7" name="weight" id="weight"
+                class="input  form__input  form__input--weight">
+            </li>
+            <li class="form__main-info-item">
+              <label for="age" class="form__label form__label--age"> Возраст (лет): </label>
+              <input type="text" placeholder="7" name="age" id="age" class="input  form__input  form__input--age">
+            </li>
+          </ul>
+          <ul class="form__target-list">
+            <li class="form__target-item">
+              <label for="weight-less" class="form__label  form__label--radio  radio__label">
+                <!--common styles  __  positioning  __  specific styles from block RADIO-->
+                <input type="radio" class="radio  form__radio" name="form__radio" id="weight-less" value="Похудение"
+                  checked>
+                <span class="radio__custom"></span>
+                Похудение
+              </label>
+            </li>
+            <li class="form__target-item">
+              <label for="weight-more" class="form__label  form__label--radio  radio__label">
+                <!--common styles  __  positioning  __  specific styles from block RADIO-->
+                <input type="radio" class="radio  form__radio" name="form__radio" id="weight-more" value="Набор массы">
+                <span class="radio__custom"></span>
+                Набор массы
+              </label>
+            </li>
+            <li class="form__target-item">
+              <label for="dont-know" class="form__label  form__label--radio  radio__label">
+                <!--common styles  __  positioning  __  specific styles from block RADIO-->
+                <input type="radio" class="radio  form__radio" name="form__radio" id="dont-know" value="Похудение">
+                <span class="radio__custom"></span>
+                Не знаю (Нужен ваш совет)
+              </label>
+            </li>
+          </ul>
+        </section>
+        <section class="form__contacts">
+          <h2 class="heading form__contacts-heading">Контактные данные
+            (владельца кота)</h2>
+          <ul class="form__contacts-list">
+            <li class="form__contacts-item">
+              <label for="owner-mail" class="form__label  form__label--owner-mail">E-mail:*</label>
+              <input type="email" class="input  form__input  form__input--email" name="owner-email"
+                placeholder="KUKLACHEV@GMAIL.COM" id="owner-mail">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 13"
+                class="input__logo-mail  form__input-mail-logo">
+                <path
+                  d="M15.6 11.6H1.4V5.8H0V13h17V5.8h-1.4v5.8zM0 0v2.3l8.5 7.1L17 2.3V0H0zm15.6 1.6L8.5 7.5 1.4 1.6v-.2h14.2v.2z" />
               </svg>
-          </li>
-          <li class="form__contacts-item">
-            <span class="heading  form__textarea-heading">Комментарий</span>
-            <textarea name="comments" id="comments" cols="30" rows="10"
-              class="form__other-info">Расскажите обо всех повадках кота</textarea>
-          </li>
-        </ul>
-        <h2 class="heading form__other-heading">Дополнительно</h2>
-        <ul class="form__other-list">
-          <li class="form__other-item">
-            <label for="sugar-check" class="form__label  form__label--other  checkbox__label">
-              <input type="checkbox" name="sugar" id="sugar-check" class="checkbox  form__cbox" checked>
-              <span class="checkbox__custom"></span>Сахарозаменитель
-            </label>
-          </li>
-          <li class="form__other-item">
-            <label for="water-check" class="form__label  form__label--other  checkbox__label">
-              <input type="checkbox" name="water" id="water-check" class="checkbox  form__cbox">
-              <span class="checkbox__custom"></span>Питьевая вода
-            </label>
-          </li>
-          <li class="form__other-item">
-            <label for="milk-check" class="form__label  form__label--other  checkbox__label">
-              <input type="checkbox" name="milk" id="milk-check" class="checkbox  form__cbox">
-              <span class="checkbox__custom"></span>Молоко
-            </label>
-          </li>
-          <li class="form__other-item">
-            <label for="vitals-check" class="form__label  form__label--other  checkbox__label">
-              <input type="checkbox" name="vitals" id="vitals-check" class="checkbox  form__cbox">
-              <span class="checkbox__custom"></span>Витамины
-            </label>
-          </li>
-        </ul>
-        <button class="button  form__button">Отправить заявку</button>
-        <span class="form__req-input">* — Обязательные поля</span>
+            </li>
+            <li class="form__contacts-item">
+              <label for="phone" class="form__label  form__label--owner-phone">Телефон:*</label>
+              <input type="tel" name="owner-tel" id="phone" class="input  form__input  form__input--phone"
+                placeholder="8 (960) 900-60-90" pattern="8\s[0-9]{3}\s[0-9]{3}-[0-9]{2}-[0-9]{2}">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="input__phone  form__input-phone-logo">
+                <path
+                  d="M17.9 9.4H9.4v1.2h8.5l-2.1 2.1.9.9 3.1-3.1c.2-.2.2-.6 0-.9l-3.1-3.1-.9.9 2.1 2zM8.1 19.4v-6.2c0-.3-.3-.6-.6-.6H3.1c0 .7.6 1.2 1.2 1.2h2.5v5H3.1c-1 .1-1.8-.7-1.9-1.7v-14c0-1 .8-1.8 1.7-1.8H6.8v5H4.4c-.7 0-1.2.6-1.2 1.2h4.4c.3 0 .6-.3.6-.6V.6C8.1.3 7.8 0 7.5 0H3.1C1.5-.1.1 1.2 0 2.9V16.8c-.1 1.7 1.2 3.1 2.9 3.1H7.5c.3.1.6-.2.6-.5z" />
+              </svg>
+            </li>
+            <li class="form__contacts-item  form__extra-info">
+              <span class="heading  form__textarea-heading">Комментарий</span>
+              <textarea name="comments" id="comments" cols="30" rows="10" class="form__other-info"
+                placeholder="Расскажите обо всех повадках кота"></textarea>
+            </li>
+          </ul>
+        </section>
+        <section class="form__other">
+          <h2 class="heading form__other-heading">Дополнительно</h2>
+          <ul class="form__other-list">
+            <li class="form__other-item">
+              <label for="sugar-check" class="form__label  form__label--other  checkbox__label">
+                <input type="checkbox" name="sugar" id="sugar-check" class="checkbox  form__cbox" checked>
+                <span class="checkbox__custom"></span>Сахарозаменитель
+              </label>
+            </li>
+            <li class="form__other-item">
+              <label for="water-check" class="form__label  form__label--other  checkbox__label">
+                <input type="checkbox" name="water" id="water-check" class="checkbox  form__cbox">
+                <span class="checkbox__custom"></span>Питьевая вода
+              </label>
+            </li>
+            <li class="form__other-item">
+              <label for="milk-check" class="form__label  form__label--other  checkbox__label">
+                <input type="checkbox" name="milk" id="milk-check" class="checkbox  form__cbox">
+                <span class="checkbox__custom"></span>Молоко
+              </label>
+            </li>
+            <li class="form__other-item">
+              <label for="vitals-check" class="form__label  form__label--other  checkbox__label">
+                <input type="checkbox" name="vitals" id="vitals-check" class="checkbox  form__cbox">
+                <span class="checkbox__custom"></span>Витамины
+              </label>
+            </li>
+          </ul>
+          <div class="form__btn-wrapper">
+            <!--For column or row flex layout of this elements-->
+            <button class="button  form__button">Отправить заявку</button>
+            <span class="form__req-input">* — Обязательные поля</span>
+          </div>
+        </section>
       </form>
     </section>
     <section class="contacts  page-main__contacts">
@@ -140,8 +158,8 @@
           <source srcset="img/bg-map-desktop@1x.png" media="(min-width: 1300px)">
           <source srcset="img/bg-map-tablet@1x.png" media="(min-width: 768px)">
           <source srcset="img/bg-map-mobile@1x.png">
-          <img src="img/bg-map-desktope@1x.png" alt="Карта с указанием местаположения магазина Кэт Энерджи" class="contacts__map"
-            width="320" height="362">
+          <img src="img/bg-map-desktope@1x.png" alt="Карта с указанием местаположения магазина Кэт Энерджи"
+            class="contacts__map" width="320" height="362">
         </picture>
       </a>
     </section>
@@ -199,19 +217,20 @@
     </div>
   </footer>
   <script>
-      var navMain = document.querySelector('.main-nav');
-      var navToggle = document.querySelector('.main-nav__toggle');
+    var navMain = document.querySelector('.main-nav');
+    var navToggle = document.querySelector('.main-nav__toggle');
 
-      navMain.classList.remove('main-nav--nojs');
+    navMain.classList.remove('main-nav--nojs');
 
-      navToggle.addEventListener('click', function() {
-        if (navMain.classList.contains('main-nav--closed')) {
-          navMain.classList.remove('main-nav--closed');
-          navMain.classList.add('main-nav--opened');
-        } else {
-          navMain.classList.add('main-nav--closed');
-          navMain.classList.remove('main-nav--opened');
-        }
-      });
-    </script>
+    navToggle.addEventListener('click', function () {
+      if (navMain.classList.contains('main-nav--closed')) {
+        navMain.classList.remove('main-nav--closed');
+        navMain.classList.add('main-nav--opened');
+      } else {
+        navMain.classList.add('main-nav--closed');
+        navMain.classList.remove('main-nav--opened');
+      }
+    });
+
+  </script>
 </body>
