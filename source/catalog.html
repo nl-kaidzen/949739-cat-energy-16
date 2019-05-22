@@ -11,9 +11,12 @@
 <body>
   <header class="page-header">
     <a href="index.html" class="page-header__logo-link">
-      <!--w/o link for index.html-->
-      <!--remove after copy-->
-      <!--<img src="img/logo-mobile.svg" alt="Логотип сайта Кет энерджи" class="page-header__logo" width="191" height="39">-->
+      <picture>
+        <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+        <source media="(min-width: 320px)" srcset="img/logo-mobile.svg">
+        <img src="img/logo-mobile.svg" alt="Логотип Cat Energy" width="191" height="39" class="page-header__logo">
+      </picture>
     </a>
     <nav class="main-nav  main-nav--opened  main-nav--nojs">
         <button class="main-nav__toggle"></button>
