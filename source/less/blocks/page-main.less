@@ -3,27 +3,56 @@
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+}
 
-  &__promo {
+.page-main__promo {
+  margin: 0 auto;
+}
+
+.page-main__plans,
+.page-main__feature,
+.page-main__case,
+.page-main__contacts {
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-main__products {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.page-main__extra-wrapper {
+  width: 320px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/*for form.html*/
+
+.page-main__quest-form {
+  width: @mobile-width;
+  margin: 0 auto;
+}
+
+@media (min-width: @tablet-width) {
+  .page-main {
+    width: 100%;
+  }
+
+  .page-main__plans {
+    margin-top: 529px;
+  }
+
+  .page-main__products {
+    width: @tablet-width;
     margin: 0 auto;
   }
 
-  &__plans,
-  &__feature,
-  &__case,
-  &__contacts {
-    margin-top: 0;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  &__products {
-    width: 320px;
-    margin: 0 auto;
-  }
-
-  &__extra-wrapper {
-    width: 320px;
+  .page-main__extra-wrapper {
+    width: @tablet-width;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -31,64 +60,35 @@
 
   /*for form.html*/
 
-  &__quest-form {
-    width: @mobile-width;
+  .page-main__quest-form {
+    width: @tablet-width;
     margin: 0 auto;
-  }
-}
-
-@media (min-width: @tablet-width) {
-  .page-main {
-    width: 100%;
-
-    &__plans {
-      margin-top: 529px;
-    }
-
-    &__products {
-      width: @tablet-width;
-      margin: 0 auto;
-    }
-
-    &__extra-wrapper {
-      width: @tablet-width;
-      margin: 0 auto;
-      display: flex;
-      flex-direction: column;
-    }
-
-    /*for form.html*/
-
-    &__quest-form {
-      width: @tablet-width;
-      margin: 0 auto;
-    }
   }
 }
 
 @media (min-width: @desktop-width) {
   .page-main {
     width: 100%;
+  }
 
-    &__plans {
-      margin-top: 0;
-    }
+  .page-main__plans {
+    margin-top: 0;
+  }
 
-    &__products {
-      width: @desktop-width;
-      margin: 0 auto;
-    }
+  .page-main__products {
+    width: @desktop-width;
+    margin: 0 auto;
+  }
 
-    &__extra-wrapper {
-      width: @desktop-width;
-      margin: 0 auto;
-      display: flex;
-      flex-direction: row;
-    }
+  .page-main__extra-wrapper {
+    width: @desktop-width;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+  }
 
-    &__quest-form {
-      width: @desktop-width;
-      margin: 0 auto;
-    }
+  .page-main__quest-form {
+    width: @desktop-width;
+    margin: 0 auto;
   }
 }
