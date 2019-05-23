@@ -5,43 +5,43 @@
   width: 320px;
   margin: 0 auto;
   border-bottom: 1px solid #dcdcdc;
+}
 
-  &__logo-link {
-    display: block;
-    margin-top: 11px;
-    padding-bottom: 15px;    /*bigger clickable area*/
-    margin-left: 20px;
-    width: 191px;
-    height: 39px;
+.page-header__logo-link {
+  display: block;
+  margin-top: 11px;
+  padding-bottom: 15px;
+  margin-left: 20px;
+  width: 191px;
+  height: 39px;
 
-    &:hover {
-      opacity: 0.8;
-    }
-
-    &:active {
-      opacity: 0.6;
-    }
+  &:hover {
+    opacity: 0.8;
   }
 
-  &__logo {
-    width: 191px;
-    height: 39px;
+  &:active {
+    opacity: 0.6;
   }
+}
 
-  &--index {
-    &::after {
-      display: none;
-      content: "";
-      position: absolute;
-      left: 0;
-      min-height: 306px;
-      width: 100%;
-      background-image: url("../img/index-background-mobile@1x.jpg");
-      background-color: #63a73a;
-      background-position: bottom;
-      background-repeat: no-repeat;
-      z-index: -1;
-    }
+.page-header__logo {
+  width: 191px;
+  height: 39px;
+}
+
+.page-header--index {
+  &::after {
+    display: none;
+    content: "";
+    position: absolute;
+    left: 0;
+    min-height: 306px;
+    width: 100%;
+    background-image: url("../img/index-background-mobile@1x.jpg");
+    background-color: #63a73a;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    z-index: -1;
   }
 }
 
@@ -52,23 +52,23 @@
     width: @tablet-width;
     margin: 0 auto;
     border: none;
+  }
 
-    &__logo-link {
-      margin-top: 24px;
-      margin-left: 29px;
-      width: 174px;
-      height: 60px;
-    }
+  .page-header__logo-link {
+    margin-top: 24px;
+    margin-left: 29px;
+    width: 174px;
+    height: 60px;
+  }
 
-    &__logo {
-      width: 174px;
-      height: 60px;
-    }
+  .page-header__logo {
+    width: 174px;
+    height: 60px;
+  }
 
-    &--index {
-      &::after {
-        display: none;
-      }
+  .page-header--index {
+    &::after {
+      display: none;
     }
   }
 }
@@ -78,32 +78,32 @@
     justify-content: space-between;
     width: @desktop-width;
     margin: 0 auto;
+  }
 
-    &__logo-link {
-      margin-top: 54px;
-      margin-left: 40px;
-      width: 203px;
-    }
+  .page-header__logo-link {
+    margin-top: 54px;
+    margin-left: 40px;
+    width: 203px;
+  }
 
-    &__logo {
-      width: 203px;
-      height: 60px;
-    }
+  .page-header__logo {
+    width: 203px;
+    height: 60px;
+  }
 
-    &--index {
-      &::after {
-        display: block;
-        width: 50%;
-        min-height: 696px;
-        top: 0;
-        right: 0;
-        left: inherit;
-        background-image: url("../img/index-background-desktop@1x.jpg");
-        background-color: #63a73a;
-        background-position: 0%;
-        background-repeat: no-repeat;
-        background-size: cover;
-      }
+  .page-header--index {
+    &::after {
+      display: block;
+      width: 50%;
+      min-height: 696px;
+      top: 0;
+      right: 0;
+      left: inherit;
+      background-image: url("../img/index-background-desktop@1x.jpg");
+      background-color: #63a73a;
+      background-position: 0%;
+      background-repeat: no-repeat;
+      background-size: cover;
     }
   }
 }
