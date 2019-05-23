@@ -5,7 +5,7 @@
   overflow: hidden;
   clip: rect(0 0 0 0);
 
-  &:checked+.checkbox__custom {
+  &:checked + .checkbox__custom {
     background-image: url("../img/icon-tick--green.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
@@ -13,7 +13,7 @@
     border: solid 1px #cdcdcd;
   }
 
-  &:checked+.checkbox__custom:hover {
+  &:checked + .checkbox__custom:hover {
     background-image: url("../img/icon-tick--green.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
@@ -21,7 +21,7 @@
     border: solid 1px #bababa;
   }
 
-  &:checked+.checkbox__custom:active {
+  &:checked + .checkbox__custom:active {
     background-image: url("../img/icon-tick--green.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
@@ -30,7 +30,7 @@
     opacity: 0.3;
   }
 
-  &+.checkbox__custom:hover {
+  & + .checkbox__custom:hover {
     border: solid 1px #bababa;
   }
 }
@@ -56,11 +56,11 @@
     color: rgba(34, 34, 34, 0.3);
   }
 
-  &:hover>.checkbox__custom {
+  &:hover > .checkbox__custom {
     border: solid 1px #bababa;
   }
 
-  &:active>.checkbox__custom {
+  &:active > .checkbox__custom {
     opacity: 0.3;
   }
 }
