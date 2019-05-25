@@ -5,6 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -19,7 +21,7 @@
       </picture>
     </a>
     <nav class="main-nav  main-nav--opened  main-nav--nojs">
-        <button class="main-nav__toggle"></button>
+        <button class="main-nav__toggle" aria-label="Открыть/закрыть меню на мобильной версии сайта"></button>
         <!--Icon or pseudo-element-->
       <ul class="main-nav__list">
         <li class="main-nav__item"><a href="index.html" class="main-nav__link">Главная</a></li>
@@ -94,7 +96,7 @@
           <a href="#" class="button  product-card__button">Заказать</a>
         </li>
         <li class="product-card__item">
-            <a href="catalog/fish-small.html" class="product-card__img-link">
+          <a href="catalog/fish-small.html" class="product-card__img-link">
             <picture class="product-card__img-wrapper">
               <source type="image/webp" media="(min-width: 1300px)" srcset="img/fish-small-desktop@1x.webp 1x, img/fish-small-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)" srcset="img/fish-small-tablet@1x.webp 1x, img/fish-small-tablet@2x.webp 2x">
@@ -103,7 +105,7 @@
               <source media="(min-width:768px)" srcset="img/fish-small-tablet@1x.png, img/fish-small-tablet@2x.png 2x">
               <img src="img/fish-small-mobile@1x.jpg" srcset="img/fish-small-mobile@2x.jpg 2x" alt="Фото Кэт Энерджи рыба" class="product-card__image" width="140" height="144">
             </picture>
-            </a>
+          </a>
           <div class="product-card__wrapper">
             <a href="catalog/fish-small.html" class="heading  product-card__name">Cat energy pro 500 г</a>
             <ul class="feature-list  product-card__features">
@@ -244,7 +246,7 @@
           <a href="#" class="button  product-card__button">Заказать</a>
         </li>
         <li class="product-card__item product-card__item--more">
-          <a href="#" class="product-card__btn-plus"></a>
+          <a href="#" class="product-card__btn-plus" aria-label="Показать больше товаров"></a>
           <p class="heading product-card__name product-card__discription">Показать еще 100500 товаров</p>
           <p class="product-card__subtitle">На самом деле вкусов гораздо больше!</p>
           <a href="catalog/all-products.html" class="button  product-card__button--more">Показать все</a>
@@ -306,7 +308,7 @@
             <span class="contacts__address  contacts__address--city">Санкт-Петербург</span></address>
         </div>
       </div>
-      <a href="map.html" class="contacts__map-link">
+      <a href="map.html" class="contacts__map-link" aria-label="Открыть арту с местоположением магазина">
         <picture class="contacts__map-wrapper">
           <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png, img/bg-map-desktop@2x.png 2x">
           <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png, img/bg-map-tablet@2x.png 2x">
