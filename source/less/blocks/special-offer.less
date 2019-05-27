@@ -1,67 +1,78 @@
 .special-offer {
   width: 320px;
+}
 
-  &__container {
-    display: flex;
-    flex-direction: column;
-    width: 280px;
-    height: auto;
-    margin: 0 auto;
-    margin-top: 39px;
-    margin-bottom: 35px;
-    background-image: url("../img/gift-photo-mobile@1x.jpg");
-  }
+.special-offer__container {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 39px;
+  margin-bottom: 35px;
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-size: 280px;
+  background-color: #63a73a;
 
-  &__offer-logo {
-    width: 56px;
-    height: 61px;
-    margin: 64px auto;
-    margin-bottom: 63px;
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/gift-photo-mobile@2x.jpg");
   }
+}
 
-  &__subtitle {
-    width: 162px;
-    font-family: @font-arial;
-    .font-normal;
-    font-size: 16px;
-    line-height: 1.25;
-    color: #ffffff;
-    margin: 0 auto;
-    margin-bottom: 41px;
-    text-align: center;
-  }
+.special-offer__offer-logo {
+  width: 56px;
+  height: 61px;
+  margin: 64px auto;
+  margin-bottom: 63px;
+}
+
+.special-offer__subtitle {
+  width: 162px;
+  font-family: @font-arial;
+  .font-normal;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #ffffff;
+  margin: 0 auto;
+  margin-bottom: 41px;
+  text-align: center;
 }
 
 @media (min-width: @tablet-width) {
   .special-offer {
     width: @tablet-width;
+  }
 
-    &__container {
-      flex-direction: row;
-      width: 708px;
-      height: auto;
-      margin: 0 auto;
-      margin-top: 69px;
-      margin-bottom: 76px;
-      background-image: url("../img/gift-photo-tablet@1x.jpg");
-    }
+  .special-offer__container {
+    flex-direction: row;
+    width: 708px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 69px;
+    margin-bottom: 76px;
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
+    background-size: 708px;
 
-    &__offer-logo {
-      width: 56px;
-      height: 61px;
-      margin-top: 65px;
-      margin-bottom: 74px;
-      margin-left: 91px;
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/gift-photo-tablet@2x.jpg");
     }
+  }
 
-    &__subtitle {
-      width: 163px;
-      margin: 0 auto;
-      margin-top: 73px;
-      margin-bottom: 67px;
-      margin-right: 123px;
-      text-align: left;
-    }
+  .special-offer__offer-logo {
+    width: 56px;
+    height: 61px;
+    margin-top: 65px;
+    margin-bottom: 74px;
+    margin-left: 91px;
+  }
+
+  .special-offer__subtitle {
+    width: 163px;
+    margin: 0 auto;
+    margin-top: 73px;
+    margin-bottom: 67px;
+    margin-right: 123px;
+    text-align: left;
   }
 }
 
@@ -71,32 +82,37 @@
     margin-top: 189px;
     margin-right: 40px;
     margin-bottom: 85px;
+  }
 
-    &__container {
-      display: flex;
-      flex-direction: column;
-      width: 245px;
-      height: auto;
-      margin: 0 auto;
-      background-image: url("../img/gift-photo-mobile@1x.jpg");
-    }
+  .special-offer__container {
+    display: flex;
+    flex-direction: column;
+    width: 245px;
+    height: auto;
+    margin: 0 auto;
+    background-image: url("../img/gift-photo-desktop@1x.jpg");
+    background-size: 245px;
 
-    &__offer-logo {
-      width: 56px;
-      height: 61px;
-      margin: 64px auto;
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/gift-photo-desktop@2x.jpg");
     }
+  }
 
-    &__subtitle {
-      width: 162px;
-      font-family: @font-arial;
-      .font-normal;
-      font-size: 16px;
-      line-height: 1.25;
-      color: #ffffff;
-      margin: 0 auto;
-      margin-bottom: 40px;
-      text-align: center;
-    }
+  .special-offer__offer-logo {
+    width: 56px;
+    height: 61px;
+    margin: 64px auto;
+  }
+
+  .special-offer__subtitle {
+    width: 162px;
+    font-family: @font-arial;
+    .font-normal;
+    font-size: 16px;
+    line-height: 1.25;
+    color: #ffffff;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    text-align: center;
   }
 }

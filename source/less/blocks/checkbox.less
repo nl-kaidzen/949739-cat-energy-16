@@ -5,38 +5,8 @@
   overflow: hidden;
   clip: rect(0 0 0 0);
 
-  &__custom {
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    background-color: transparent;
-    border: solid 1px #cdcdcd;
-    z-index: 1;
-    box-sizing: border-box;
-    margin-left: -46px;
-    margin-top: -6px;
-    cursor: pointer;
-  }
-
-  &__label {
-    padding-left: 46px;
-    z-index: 2;
-
-    &:active {
-      color: rgba(34, 34, 34, 0.3);
-    }
-
-    &:hover > .checkbox__custom {      /*Label no react to hover*/
-      border: solid 1px #bababa;
-    }
-
-    &:active > .checkbox__custom {
-      opacity: 0.3;
-    }
-  }
-
   &:checked + .checkbox__custom {
-    background-image: url("../img/icon-tick--green.svg");
+    background-image: url("../img/icon-tick.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 22px 17px;
@@ -44,7 +14,7 @@
   }
 
   &:checked + .checkbox__custom:hover {
-    background-image: url("../img/icon-tick--green.svg");
+    background-image: url("../img/icon-tick.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 22px 17px;
@@ -52,7 +22,7 @@
   }
 
   &:checked + .checkbox__custom:active {
-    background-image: url("../img/icon-tick--green.svg");
+    background-image: url("../img/icon-tick.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 22px 17px;
@@ -63,19 +33,56 @@
   & + .checkbox__custom:hover {
     border: solid 1px #bababa;
   }
+
+  &:focus + .checkbox__custom {
+    outline: #000000 1px solid;
+  }
+
+  &:disabled + .checkbox__custom {
+    opacity: 0.1;
+  }
 }
 
-@media (min-width: @tablet-width) {
-  .checkbox {
-    &__custom {
-      width: 40px;
-      height: 40px;
-      margin-left: -60px;
-      margin-top: -5px;
-    }
+.checkbox__custom {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border: solid 1px #cdcdcd;
+  z-index: 1;
+  box-sizing: border-box;
+  margin-left: -46px;
+  margin-top: -6px;
+  cursor: pointer;
+}
 
-    &__label {
-      padding-left: 60px;
-    }
+.checkbox__label {
+  padding-left: 46px;
+  z-index: 2;
+
+  &:active {
+    color: rgba(34, 34, 34, 0.3);
+  }
+
+  &:hover > .checkbox__custom {
+    border: solid 1px #bababa;
+  }
+
+  &:active > .checkbox__custom {
+    opacity: 0.3;
+  }
+}
+
+
+@media (min-width: @tablet-width) {
+  .checkbox__custom {
+    width: 40px;
+    height: 40px;
+    margin-left: -60px;
+    margin-top: -5px;
+  }
+
+  .checkbox__label {
+    padding-left: 60px;
   }
 }
