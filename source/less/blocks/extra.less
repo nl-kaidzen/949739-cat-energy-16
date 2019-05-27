@@ -61,6 +61,7 @@
 
 .extra__feature,
 .extra__value {
+  display: flex;
   font-family: @font-arial;
   .font-normal;
   font-size: 14px;
@@ -114,7 +115,6 @@
   .extra__name {
     width: 160px;
     padding: 0;
-    /*delete custom properties*/
     padding-top: 21px;
     margin-left: 40px;
     font-size: 20px;
@@ -130,6 +130,11 @@
 
   .extra__feature {
     margin-right: 52px;
+  }
+
+  .extra__value {
+    width: 44px;
+    justify-content: flex-end;
   }
 
   .extra__feature,
@@ -209,7 +214,7 @@
   .extra__value {
     margin-right: 34px;
     width: 47px;
-    text-align: left;
+    justify-content: flex-start;
   }
 
   .extra__button {
