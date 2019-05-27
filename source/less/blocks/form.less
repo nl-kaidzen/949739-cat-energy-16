@@ -143,6 +143,8 @@
   &::before {
     .pseudo-green-line();
     top: 26px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 
@@ -181,6 +183,8 @@
 
   &::before {
     .pseudo-green-line();
+    left: 50%;
+    transform: translateX(-50%);
     top: 19px;
   }
 }
@@ -334,7 +338,8 @@
   .form__contacts {
     &::before {
       top: 97px;
-      left: calc((100vw - 768px - 17px) / 2 * -1);
+      left: 50%;
+      transform: translateX(-50%);
       width: 100vw;
     }
   }
@@ -367,7 +372,8 @@
   .form__extra-info {
     &::before {
       top: 68px;
-      left: calc((100vw - 768px - 17px) / 2 * -1);
+      left: 50%;
+      transform: translateX(-50%);
       width: 100vw;
     }
   }
@@ -396,7 +402,8 @@
   .form__other {
     &::before {
       top: 32px;
-      left: calc((100vw - 768px - 17px) / 2 * -1);
+      left: 50%;
+      transform: translateX(-50%);
       width: 100vw;
     }
   }
@@ -556,7 +563,8 @@
   .form__contacts {
     &::before {
       top: 91px;
-      left: calc((100vw - 1300px - 17px) / 2 * -1);
+      left: 50%;
+      transform: translateX(-50%);
       width: 100vw;
     }
   }
@@ -592,7 +600,8 @@
   .form__extra-info {
     &::before {
       top: 89px;
-      left: calc((100vw - 1220px - 17px) / 2 * -1);
+      left: 50%;
+      transform: translateX(-50%);
       width: 100vw;
     }
   }
@@ -621,7 +630,8 @@
 
     &::before {
       top: 31px;
-      left: calc((100vw - 1300px) / 2 * -1);
+      left: 50%;
+      transform: translateX(-50%);
       width: 100vw;
     }
   }
@@ -630,22 +640,24 @@
     font-size: 36px;
     margin-left: 0;
     margin-right: auto;
-    margin-bottom: 49px;
+    margin-bottom: 39px;
     width: 215px;
   }
 
   .form__other-list {
-    width: 1220px;
+    width: 1300px;
     flex-direction: row;
     flex-wrap: wrap;
     margin: 0 auto;
+    padding-left: 40px;
   }
 
   .form__other-item {
     width: 325px;
     height: 40px;
     /*REMOVE AFTER CUSTOM C-BOX*/
-    margin-bottom: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
     margin-right: 0;
   }
 
@@ -674,11 +686,11 @@
   .form__button {
     width: 568px;
     border: none;
-    margin: 61px 82px 0 1px;
+    margin: 51px 82px 0 1px;
   }
 
   .form__req-input {
     font-size: 16px;
-    margin: 75px auto 104px 0;
+    margin: 65px auto 104px 0;
   }
 }

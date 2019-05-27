@@ -33,6 +33,14 @@
   & + .checkbox__custom:hover {
     border: solid 1px #bababa;
   }
+
+  &:focus + .checkbox__custom {
+    outline: #000000 1px solid;
+  }
+
+  &:disabled + .checkbox__custom {
+    opacity: 0.1;
+  }
 }
 
 .checkbox__custom {

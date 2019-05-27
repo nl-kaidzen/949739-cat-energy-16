@@ -5,6 +5,10 @@
   overflow: hidden;
   clip: rect(0 0 0 0);
 
+  &:checked:focus + .radio__custom {
+    outline: #000000 1px solid;
+  }
+
   &:checked + .radio__custom {
     border: solid 1px #cdcdcd;
 
@@ -24,6 +28,10 @@
 
   & + .radio__custom:hover {
     border: solid 1px #bababa;
+  }
+
+  &:disabled + .radio__custom {
+    opacity: 0.1;
   }
 }
 
